@@ -1,3 +1,4 @@
+/*질의응답_1*/
 package com.example.kb
 
 import android.os.Bundle

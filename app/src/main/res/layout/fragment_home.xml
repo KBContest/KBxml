@@ -8,6 +8,8 @@
     android:weightSum="6"
     tools:context=".HomeFragment">
 
+    <!--메인 화면_1-->
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
         android:layout_width="450dp"

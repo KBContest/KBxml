@@ -1,3 +1,4 @@
+/*콘텐츠 뷰페이저 어댑터*/
 package com.example.kb
 
 import androidx.fragment.app.Fragment

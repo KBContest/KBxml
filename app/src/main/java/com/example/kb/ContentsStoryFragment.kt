@@ -1,3 +1,4 @@
+/*콘텐츠_2 환수 스토리*/
 package com.example.kb
 
 import android.os.Bundle

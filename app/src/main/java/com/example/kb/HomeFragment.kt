@@ -1,3 +1,4 @@
+/*메인 화면_1*/
 package com.example.kb
 
 import android.os.Bundle

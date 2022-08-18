@@ -1,3 +1,4 @@
+/*콘텐츠_2 환수 스토리 리스트*/
 package com.example.kb
 
 import androidx.appcompat.app.AppCompatActivity

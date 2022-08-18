@@ -1,3 +1,4 @@
+/*콘텐츠_2 문화재*/
 package com.example.kb
 
 import android.os.Bundle
@@ -30,3 +31,5 @@ class ContentsCultureFragment : Fragment() {
     }
 
 }
+
+
