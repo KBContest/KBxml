@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity2">
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".SignUpActivity4">
 
-    <!--회원가입_2-->
+    <!--회원가입_4-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,16 +32,49 @@
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_weight="0.4"
-            android:text="이메일을 입력해주세요"
+            android:text="비밀번호를 입력해주세요"
             android:textColor="@color/white"
             android:textSize="16dp" />
 
         <!-- 글자수 설정 필요-->
         <EditText
+            android:id="@+id/editTextTextPassword_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#66ffffff"
+            android:drawableRight="@drawable/confirm_password"
+            android:ems="10"
+            android:hint="비밀번호 확인"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_44"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#66ffffff"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_44"
+            android:textSize="12dp" />
+
+        <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="35dp"
             android:backgroundTint="#66ffffff"
             android:ems="10"

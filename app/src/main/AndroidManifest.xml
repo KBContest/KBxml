@@ -14,7 +14,16 @@
         android:theme="@style/Theme.KB"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity4"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity6"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity2"

@@ -25,12 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="216dp"
         android:layout_marginEnd="35dp"
         android:background="@drawable/radius_beige"
         android:text="회원가입"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
@@ -43,17 +44,18 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/radius_gray"
-        android:text="구글로 로그인"
-        android:textSize="16dp"
-        android:textColor="@color/white"
-        android:gravity="center_vertical"
         android:drawableLeft="@drawable/goolge_icon"
-        android:paddingLeft="110dp"
         android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="110dp"
+        android:text="구글로 로그인"
+        android:textColor="@color/white"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
+        app:layout_constraintVertical_bias="0.04" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

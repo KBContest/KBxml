@@ -8,39 +8,79 @@
 
     <!--회원가입_3-->
 
-    <ImageView
-        android:id="@+id/logo_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:src="@drawable/sign_up_book_icon"
-        app:layout_constraintBottom_toTopOf="@+id/book_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
 
-    <ImageView
-        android:id="@+id/book_icon"
-        android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/contents_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.7"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/email_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_weight="0.4"
+            android:text="비밀번호를 입력해주세요"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <!-- 글자수 설정 필요-->
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#66ffffff"
+            android:drawableRight="@drawable/confirm_password"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_44"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#66ffffff"
+            android:ems="10"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_44"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/sign_up_book_icon"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="@color/point_beige"
+        android:padding="10dp"
+        android:text="다음"
+        android:textSize="16dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/complete_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="회원가입 완료!"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/book_icon"
-        app:layout_constraintVertical_bias="0.076" />
-
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
