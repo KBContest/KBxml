@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".ContentsStoryFragment">
+
+    <TextView
+        android:id="@+id/contents_story_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="환수 비하인드 스토리"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:paddingBottom="15dp"
+        android:layout_weight="0.5"
+        android:gravity="bottom" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:id="@+id/contents_back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="423dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/contents_back" />
+
+        <TextView
+            android:id="@+id/contents_story_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/contents_back_image"
+            android:layout_alignEnd="@+id/contents_back_image"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="일본서 고국으로 돌아온\n문화재 이야기"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:fontFamily="@font/apple_sd_gothic_neo_eb"/>
+
+        <ImageButton
+            android:id="@+id/contents_story_list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/contents_back_image"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="21dp"
+            android:src="@drawable/contents_list_btn_icon"
+            android:background="@android:color/transparent"/>
+
+
+        <ListView
+            android:id="@+id/contents_story_ex_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/contents_back_image"
+            android:layout_alignEnd="@+id/contents_back_image"
+            android:layout_alignBottom="@+id/contents_back_image"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#66000000"
+            android:divider="@color/white"
+            android:dividerHeight="1px"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1885" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2295" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/contents_selector.xml" value="0.2295" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/menu_selector_color.xml" value="0.2295" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/navi_icon.xml" value="0.228" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/navi_icon_foreground.xml" value="0.272" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/radius.xml" value="0.3335" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/radius_gray.xml" value="0.272" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/sign_up_custom_check.xml" value="0.272" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/font-v26/font_family.xml" value="0.3854166666666667" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/font/font_family.xml" value="0.2890625" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/font/font_style.xml" value="0.384375" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_contents_story_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_main.xml" value="0.28532608695652173" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_sign_up1.xml" value="0.3423913043478261" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_sign_up2.xml" value="0.340625" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_blank.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_contents.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_contents_culture.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_contents_story.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_culture.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_fund.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_home.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_mypage.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_qa.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_story.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/sing_up_bottom_sheet.xml" value="0.3423913043478261" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/menu/btm_navi_menu.xml" value="0.1" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/menu/contents_navi.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/menu/contents_navi_menu.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.272" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1885" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/mipmap-anydpi-v26/navi_icon.xml" value="0.1765" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

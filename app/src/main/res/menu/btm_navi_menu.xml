@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/tab_contents"
+        android:enabled="true"
+        android:icon="@drawable/contents_icon"
+        android:title="콘텐츠" />
+
+    <item
+        android:id="@+id/tab_QA"
+        android:enabled="true"
+        android:icon="@drawable/qna_icon"
+        android:title="질의응답" />
+
+    <item
+        android:id="@+id/tab_fund"
+        android:enabled="true"
+        android:icon="@drawable/fund_icon"
+        android:title="모금" />
+
+    <item
+        android:id="@+id/tab_myPage"
+        android:enabled="true"
+        android:icon="@drawable/my_icon"
+        android:title="마이페이지" />
+</menu>
