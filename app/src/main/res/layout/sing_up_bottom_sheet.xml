@@ -8,6 +8,7 @@
     android:paddingRight="35dp"
     android:paddingLeft="35dp"
     android:weightSum="5"
+    android:background="@color/qa_contents_background"
     app:behavior_hideable="true"
     app:behavior_draggable="true"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">

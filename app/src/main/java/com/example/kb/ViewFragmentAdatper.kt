@@ -8,7 +8,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class ViewFragmentAdatper(fm: FragmentManager, lifecycle: Lifecycle): FragmentStateAdapter(fm, lifecycle) {
 
-    override fun getItemCount(): Int = 2
+    override fun getItemCount(): Int {
+        return 2
+    }
 
     override fun createFragment(position: Int): Fragment {
         return when(position) {
@@ -17,4 +19,5 @@ class ViewFragmentAdatper(fm: FragmentManager, lifecycle: Lifecycle): FragmentSt
             else -> ContentsStoryFragment()
         }
     }
+
 }
