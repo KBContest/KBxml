@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,60 +22,77 @@
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"/>
 
-    <RelativeLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:gravity="center">
+        android:layout_height="match_parent">
 
-        <View
-            android:id="@+id/qna_background_view"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@color/qa_contents_background" />
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/qna_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginStart="0dp"
-            android:text="질문과 답변을 남겨보세요!"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="14dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp">
 
-        <View
-            android:id="@+id/qna_divide_line"
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@+id/qna_title"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginStart="3dp"
-            android:background="@color/white_44" />
+                <View
+                    android:id="@+id/qna_background_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/qa_contents_background" />
 
-        <EditText
-            android:layout_width="290dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/qna_divide_line"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="10dp"
-            android:hint="궁금한 것을 적어주세요."
-            android:textColor="@color/white"
-            android:textSize="14dp"
-            android:inputType="none"/>
+                <TextView
+                    android:id="@+id/qna_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="질문과 답변을 남겨보세요!"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
 
+                <View
+                    android:id="@+id/qna_divide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white_44" />
 
-    </RelativeLayout>
+                <EditText
+                    android:id="@+id/qna_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="150"
+                    android:fontFamily="@font/apple_sd_gothic_neo_b"
+                    android:hint="궁금한 것을 적어주세요."
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_44"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/qna_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/150"
+                    android:textColor="@color/white_44"
+                    android:textSize="12dp" />
+
+                <android.widget.Button
+                    android:id="@+id/qna_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/radius_beige"
+                    android:text="질문 남기기"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

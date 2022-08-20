@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".FundFragment">
 
     <!--모금_1-->
 
-    <TextView
+    <SearchView
+        android:id="@+id/search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fund"
-        android:gravity="center"/>
+        android:layout_height="35dp"
+        android:background="@drawable/radius_gray"
+        android:layoutDirection="rtl"
+        android:searchIcon="@drawable/search_icon"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/fund_tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-</FrameLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fund_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_background"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:tabTextColor="@color/selector_navi_color"
+        app:tabIndicatorColor="@color/selector_navi_color"
+        app:tabGravity="fill"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/fund_viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+</LinearLayout>

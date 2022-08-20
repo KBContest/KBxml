@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.findFragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -24,10 +23,10 @@ class ContentsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_contents, container, false)
-        val pager:ViewPager2 = view.findViewById(R.id.viewPager2)
-        val tab:TabLayout = view.findViewById(R.id.tabLayout)
+        val pager:ViewPager2 = view.findViewById(R.id.contents_viewPager2)
+        val tab:TabLayout = view.findViewById(R.id.contents_tabLayout)
 
-        pager.adapter = ViewFragmentAdatper(childFragmentManager, lifecycle)
+        pager.adapter = ContentsViewAdatper(childFragmentManager, lifecycle)
 
         TabLayoutMediator(tab, pager){ tab, position ->
             when(position){

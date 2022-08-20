@@ -22,19 +22,19 @@
         android:paddingBottom="10dp"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        app:layout_constraintBottom_toTopOf="@+id/contents_tabLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/contents_tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/main_background"
         android:paddingBottom="10dp"
-        app:tabTextColor="@color/selector_color"
-        app:tabIndicatorColor="@color/selector_color"
+        app:tabTextColor="@color/selector_navi_color"
+        app:tabIndicatorColor="@color/selector_navi_color"
         app:tabGravity="fill"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -43,7 +43,7 @@
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager2"
+        android:id="@+id/contents_viewPager2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintTop_toBottomOf="@+id/contents_tabLayout"
         app:layout_constraintVertical_bias="1.0" />
 
 </LinearLayout>

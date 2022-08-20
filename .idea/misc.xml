@@ -5,12 +5,19 @@
       <map>
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1885" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2295" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/circle_btn.xml" value="0.2565" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/contents_selector.xml" value="0.2295" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/edit_custom.xml" value="0.253" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/fund_edit_custom.xml" value="0.253" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/fund_progress_custom.xml" value="0.2565" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/menu_selector_color.xml" value="0.2295" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/navi_icon.xml" value="0.228" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/navi_icon_foreground.xml" value="0.272" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/radius.xml" value="0.3335" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/radius_beige.xml" value="0.253" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/radius_beige_empty.xml" value="0.253" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/radius_gray.xml" value="0.272" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/selector_btn_color.xml" value="0.253" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/sign_up_bottom_sheet_background.xml" value="0.272" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/sign_up_custom_check.xml" value="0.272" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/font-v26/font_family.xml" value="0.3854166666666667" />
@@ -18,6 +25,7 @@
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/font/font_style.xml" value="0.384375" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_contents_story_detail.xml" value="0.3423913043478261" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_contents_story_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_fund_open.xml" value="0.22" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_main.xml" value="0.28532608695652173" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_sign_up1.xml" value="0.3423913043478261" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/activity_sign_up2.xml" value="0.3333333333333333" />
@@ -33,10 +41,15 @@
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_contents_story.xml" value="0.3392210144927536" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_culture.xml" value="0.3392210144927536" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_fund.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_fund_best.xml" value="0.340625" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_fund_end.xml" value="0.3423913043478261" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_fund_home.xml" value="0.3423913043478261" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_fund_new.xml" value="0.340625" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_home.xml" value="0.3392210144927536" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_mypage.xml" value="0.3392210144927536" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_qa.xml" value="0.3392210144927536" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fragment_story.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/fund_list_custom.xml" value="0.22" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/layout/sing_up_bottom_sheet.xml" value="0.3423913043478261" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/menu/btm_navi_menu.xml" value="0.1" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/menu/contents_navi.xml" value="0.35520833333333335" />

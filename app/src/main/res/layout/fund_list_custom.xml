@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="35dp"
+    android:layout_marginLeft="35dp">
+
+    <ImageView
+        android:id="@+id/fund_image"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="center"
+        android:src="@drawable/mongyudowondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fund_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="일본 문화재"
+        android:textColor="@color/white_44"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fund_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fund_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="이음정필 목포도도병풍\n환수 지원"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fund_image"
+        app:layout_constraintTop_toBottomOf="@+id/fund_country_name" />
+
+    <TextView
+        android:id="@+id/fund_progress_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="80%"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/fund_progressBar"
+        app:layout_constraintStart_toEndOf="@+id/fund_image"
+        app:layout_constraintTop_toBottomOf="@+id/fund_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/fund_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:progress="80"
+        android:progressDrawable="@drawable/fund_progress_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fund_image" />
+
+    <TextView
+        android:id="@+id/fund_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="1,450,000원"
+        android:textColor="@color/white_44"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/fund_progressBar"
+        app:layout_constraintEnd_toStartOf="@+id/fund_day"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fund_progress_percent"
+        app:layout_constraintTop_toBottomOf="@+id/fund_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/fund_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="2일 남음"
+        android:textColor="@color/white_44"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/fund_progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fund_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

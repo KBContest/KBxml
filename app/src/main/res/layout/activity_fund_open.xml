@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FundOpenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fund_open_background"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:src="@drawable/mongyudowondo"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/contents_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_back"
+            android:background="@android:color/transparent"
+            android:paddingLeft="35dp"
+            android:paddingTop="45dp"/>
+
+        <EditText
+            android:id="@+id/fund_open_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fund_open_background"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:hint="모금 프로그램 제목을 입력하세요"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/fund_open_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="국가"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/fund_open_country_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.widget.Button
+                        android:id="@+id/country_j_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/radius_beige_empty"
+                        android:text="일본"
+                        android:textColor="@color/point_beige"
+                        android:textSize="12dp" />
+
+                    <android.widget.Button
+                        android:id="@+id/country_c_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/radius_beige_empty"
+                        android:text="중국"
+                        android:textColor="@color/point_beige"
+                        android:textSize="12dp" />
+
+                    <android.widget.Button
+                        android:id="@+id/country_f_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/radius_beige_empty"
+                        android:text="프랑스"
+                        android:textColor="@color/point_beige"
+                        android:textSize="12dp" />
+
+                    <android.widget.Button
+                        android:id="@+id/country_u_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/radius_beige_empty"
+                        android:text="미국"
+                        android:textColor="@color/point_beige"
+                        android:textSize="12dp" />
+
+                    <android.widget.Button
+                        android:id="@+id/country_g_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/radius_beige_empty"
+                        android:text="독일"
+                        android:textColor="@color/point_beige"
+                        android:textSize="12dp" />
+
+                    <android.widget.Button
+                        android:id="@+id/country_r_btn"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@drawable/radius_beige_empty"
+                        android:text="러시아"
+                        android:textColor="@color/point_beige"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/project_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="프로젝트 소개"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/project_intro_edit"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/edit_custom"
+                android:gravity="top"
+                android:hint="프로젝트 의도 및 상세 내용을 적어보세요."
+                android:inputType="textImeMultiLine"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_44"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/project_intro_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="짧은 소갯말"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/project_intro_short_edit"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/edit_custom"
+                android:gravity="top"
+                android:hint="프로젝트 의도 및 상세 내용을 적어보세요."
+                android:inputType="textImeMultiLine"
+                android:maxLines="3"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_44"
+                android:textSize="12dp" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/selector_btn_color"
+                android:padding="10dp"
+                android:text="다음"
+                android:textColor="@color/selector_text_color"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
