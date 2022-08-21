@@ -1,3 +1,4 @@
+/*모금 마감임박*/
 package com.example.kb
 
 import android.os.Bundle

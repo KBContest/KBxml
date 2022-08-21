@@ -1,3 +1,4 @@
+/*모금 신규*/
 package com.example.kb
 
 import android.os.Bundle

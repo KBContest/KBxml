@@ -1,3 +1,4 @@
+/*모금 개설_2*/
 package com.example.kb
 
 import androidx.appcompat.app.AppCompatActivity

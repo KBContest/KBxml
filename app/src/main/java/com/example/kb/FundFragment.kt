@@ -1,4 +1,4 @@
-/*모금_1*/
+/*모금 개설_1*/
 package com.example.kb
 
 import android.os.Bundle

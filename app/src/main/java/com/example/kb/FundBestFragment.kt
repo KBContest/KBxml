@@ -1,3 +1,4 @@
+/*모금 인기*/
 package com.example.kb
 
 import android.os.Bundle
