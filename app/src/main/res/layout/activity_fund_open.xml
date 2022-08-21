@@ -15,17 +15,17 @@
             android:id="@+id/fund_open_background"
             android:layout_width="match_parent"
             android:layout_height="229dp"
-            android:src="@drawable/mongyudowondo"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter"
+            android:src="@drawable/mongyudowondo" />
 
         <ImageButton
-            android:id="@+id/contents_back_btn"
+            android:id="@+id/fund_back_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_back"
             android:background="@android:color/transparent"
             android:paddingLeft="35dp"
-            android:paddingTop="45dp"/>
+            android:paddingTop="45dp"
+            android:src="@drawable/btn_back" />
 
         <EditText
             android:id="@+id/fund_open_title_edit"
@@ -34,11 +34,11 @@
             android:layout_alignBottom="@+id/fund_open_background"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/apple_sd_gothic_neo_m"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/fund_edit_custom"
+            android:fontFamily="@font/apple_sd_gothic_neo_b"
             android:hint="모금 프로그램 제목을 입력하세요"
-            android:paddingBottom="15dp"
+            android:paddingBottom="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="20dp" />
@@ -82,9 +82,9 @@
                         android:layout_width="55dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="15dp"
-                        android:background="@drawable/radius_beige_empty"
+                        android:background="@drawable/selector_country_btn_color"
                         android:text="일본"
-                        android:textColor="@color/point_beige"
+                        android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
                     <android.widget.Button
@@ -92,9 +92,9 @@
                         android:layout_width="55dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="15dp"
-                        android:background="@drawable/radius_beige_empty"
+                        android:background="@drawable/selector_country_btn_color"
                         android:text="중국"
-                        android:textColor="@color/point_beige"
+                        android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
                     <android.widget.Button
@@ -102,9 +102,9 @@
                         android:layout_width="55dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="15dp"
-                        android:background="@drawable/radius_beige_empty"
+                        android:background="@drawable/selector_country_btn_color"
                         android:text="프랑스"
-                        android:textColor="@color/point_beige"
+                        android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
                     <android.widget.Button
@@ -112,9 +112,9 @@
                         android:layout_width="55dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="15dp"
-                        android:background="@drawable/radius_beige_empty"
+                        android:background="@drawable/selector_country_btn_color"
                         android:text="미국"
-                        android:textColor="@color/point_beige"
+                        android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
                     <android.widget.Button
@@ -122,9 +122,9 @@
                         android:layout_width="55dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="15dp"
-                        android:background="@drawable/radius_beige_empty"
+                        android:background="@drawable/selector_country_btn_color"
                         android:text="독일"
-                        android:textColor="@color/point_beige"
+                        android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
                     <android.widget.Button
@@ -132,9 +132,9 @@
                         android:layout_width="55dp"
                         android:layout_height="30dp"
                         android:layout_marginRight="35dp"
-                        android:background="@drawable/radius_beige_empty"
+                        android:background="@drawable/selector_country_btn_color"
                         android:text="러시아"
-                        android:textColor="@color/point_beige"
+                        android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
                 </LinearLayout>
@@ -156,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:layout_marginRight="35dp"
-                android:background="@drawable/edit_custom"
+                android:background="@drawable/edit_box_custom"
                 android:gravity="top"
                 android:hint="프로젝트 의도 및 상세 내용을 적어보세요."
                 android:inputType="textImeMultiLine"
@@ -180,7 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_marginRight="35dp"
-                android:background="@drawable/edit_custom"
+                android:background="@drawable/edit_box_custom"
                 android:gravity="top"
                 android:hint="프로젝트 의도 및 상세 내용을 적어보세요."
                 android:inputType="textImeMultiLine"
