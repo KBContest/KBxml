@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FundParticipationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/part_background"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:alpha=".75"
+                android:scaleType="centerCrop"
+                android:src="@drawable/yi_eumjeog" />
+
+            <ImageButton
+                android:id="@+id/part_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:paddingLeft="35dp"
+                android:paddingTop="45dp"
+                android:src="@drawable/btn_back" />
+
+            <ImageButton
+                android:id="@+id/part_share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:backgroundTint="@android:color/transparent"
+                android:paddingTop="45dp"
+                android:paddingRight="35dp"
+                android:src="@drawable/share_icon" />
+
+            <TextView
+                android:id="@+id/story_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_back_btn"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:text="스토리"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/participant_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_back_btn"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/story_text"
+                android:text="참여자"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/participant_num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_back_btn"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/participant_text"
+                android:text="230"
+                android:textColor="#95F4F3F0"
+                android:textSize="10dp" />
+
+            <View
+                android:id="@+id/story_text_underline"
+                android:layout_width="52dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/story_text"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" />
+
+            <android.widget.Button
+                android:id="@+id/part_country"
+                android:layout_width="70dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/part_background"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_beige"
+                android:text="일본 반출"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/part_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_country"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:text="일본으로 반출된 우리 문화재 환수"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/part_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_title"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:text="00 문화재 환수 사업 지원을 위한 모금 프로젝트"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/part_money_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_sub_title"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="38dp"
+                android:text="모인 금액"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/part_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_money_title"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="7dp"
+                android:text="1,450,000원"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ProgressBar
+                android:id="@+id/part_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="300dp"
+                android:layout_height="3dp"
+                android:layout_below="@id/part_money"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/fund_progress_custom" />
+
+            <TextView
+                android:id="@+id/part_progress_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part_money"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="35dp"
+                android:text="80%"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/user_profile_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part_progressBar"
+                android:layout_marginLeft="71dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user_profile_3" />
+
+            <ImageView
+                android:id="@+id/user_profile_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part_progressBar"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user_profile_2" />
+
+            <ImageView
+                android:id="@+id/user_profile_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part_progressBar"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user_profile_1" />
+
+            <TextView
+                android:id="@+id/user_num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_progressBar"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="17dp"
+                android:layout_toEndOf="@+id/user_profile_3"
+                android:text="524명"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/user_num_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_progressBar"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="17dp"
+                android:layout_toEndOf="@+id/user_num_text"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:text="의 후원자가 있습니다."
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <View
+                android:id="@+id/part_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/user_profile_1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white_44" />
+
+            <TextView
+                android:id="@+id/part_goal_money_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_line1"
+                android:layout_marginLeft="35dp"
+                android:text="목표 금액"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/part_goal_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_line1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/part_goal_money_title"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:text="2,000,000원"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/part_period_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_goal_money_title"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:text="펀딩 기간"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/part_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_goal_money"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/part_goal_money_title"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:text="2022.07.01 ~ 2022.08.01"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <View
+                android:id="@+id/part_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/part_period_title"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white_44" />
+
+            <ImageView
+                android:id="@+id/project_builder_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/part_line2"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/project_builder_profile" />
+
+            <TextView
+                android:id="@+id/project_builder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_line2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/part_goal_money_title"
+                android:text="사용자 이름"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/project_builder_contribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_builder_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/part_goal_money_title"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:text="기여도"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+
+            <ProgressBar
+                android:id="@+id/project_builder_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/project_builder_name"
+                android:layout_margin="9dp"
+                android:layout_toEndOf="@+id/project_builder_contribution"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/fund_progress_custom" />
+
+            <View
+                android:id="@+id/part_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/project_builder_profile"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white_44" />
+
+            <TextView
+                android:id="@+id/project_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/part_line3"
+                android:layout_marginLeft="35dp"
+                android:text="프로젝트 대상"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/project_item_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/project_item"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/yi_eumjeog" />
+
+            <View
+                android:layout_width="81dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/project_item"
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="58dp"
+                android:layout_toEndOf="@+id/project_item_image"
+                android:background="@color/qa_contents_background" />
+
+            <TextView
+                android:id="@+id/project_item_name_kr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_item"
+                android:layout_marginStart="62dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="52dp"
+                android:layout_toEndOf="@+id/project_item_image"
+                android:text="이음정필\n목포도도병풍"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/project_item_name_en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_item_name_kr"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/project_item_image"
+                android:fontFamily="@font/apple_sd_gothic_neo_m"
+                android:text="Six fold Screen of Ink Grapevine\nby Yi Eumjeong"
+                android:textAlignment="center"
+                android:textColor="@color/btn_gray"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/project_item_intro_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_item_image"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="55dp"
+                android:text="프로젝트 소개"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/project_item_intro1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_item_intro_title"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_l"
+                android:lineSpacingExtra="3dp"
+                android:text="이 프로젝트는 전세계에서 70여점 밖에 존재하지 않은 희귀한 금동반가
+사유상이고 조형미가 매우 뛰어남을 인정 받았지만 현재는 일본으로 반출된 '공주 출토 금동반가사유상'문화재 환수
+지원을 목적으로 개설된 프로젝트입니다."
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/project_item_intro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_item_intro1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_l"
+                android:lineSpacingExtra="3dp"
+                android:text="'공주 출도 금동반가사유상'은 높이가 16.3m의 작은 크기의 불상입니다.
+일반적으로 크기가 작은 반가사유상은 표현이 세밀하지 않은 경우가 많지만 '공주 출토 금동반가사유상'은 균형감이
+매우 뛰어나며 치밀하고 사실적인 묘사가 장점입니다."
+
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/project_item_intro3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/project_item_intro2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="130dp"
+                android:fontFamily="@font/apple_sd_gothic_neo_l"
+                android:lineSpacingExtra="3dp"
+                android:text="그러나 사유 재산이라서 돌려줄 수 없다는 이유로 오구라 컬렉션의 일부인
+'공주 출토 금동반가사유상'은 아직 일본 정부의 국유 재산인 상황입니다. ..."
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/bottom_btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/navi_background" />
+
+    <android.widget.Button
+        android:id="@+id/part_btn"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/bottom_btn_background"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/radius_beige"
+        android:fontFamily="@font/apple_sd_gothic_neo_eb"
+        android:text="참여하기"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/part_book_mark_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/radius_gray"
+        android:backgroundTint="@color/btn_gray"
+        android:src="@drawable/bmark_icon" />
+
+</RelativeLayout>

@@ -15,8 +15,8 @@
         <ImageView
             android:id="@+id/fund_open_background"
             android:layout_width="match_parent"
-            android:layout_height="229dp"
-            android:scaleType="fitCenter"
+            android:layout_height="210dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/mongyudowondo" />
 
         <ImageButton
