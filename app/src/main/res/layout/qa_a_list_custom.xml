@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--질의응답_2 답변 리스트 커스텀-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <View
+        android:id="@+id/qna_background_view"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/qa_contents_background" />
+
+    <ImageView
+        android:id="@+id/qna_a_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user_profile_1" />
+
+    <TextView
+        android:id="@+id/qna_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/qna_a_profile"
+        android:text="미야"
+        android:textColor="@color/white_44"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/qna_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/qna_name"
+        android:text="2022.08.03"
+        android:textColor="@color/white_44"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/qna_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qna_a_profile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="A. 일본으로 반출된 문화재로는 현재 OO, AA가 있습니다.
+이 중 AA는 올해 반환되었구요. 일본으로 반출된 문화재로는 현재 OO, AA가 있습니다.
+이 중 AA는 올해 반환되었구요."
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/qna_a_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qna_q"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
+        android:text="더보기"
+        android:textColor="@color/white_44"
+        android:textSize="12dp" />
+
+</RelativeLayout>
