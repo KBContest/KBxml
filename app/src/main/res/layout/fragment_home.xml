@@ -1,123 +1,338 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:weightSum="6"
     tools:context=".HomeFragment">
 
     <!--메인 화면_1-->
 
+    <TextView
+        android:id="@+id/main_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지금 우리 문화재는\n이만큼 반출됐어요"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
-        android:layout_width="450dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="108dp"
-        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/main_textView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/progressBar9"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_marginTop="8dp"
+            <RelativeLayout
+                android:id="@+id/japan_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageButton
-                android:id="@+id/progressBar10"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toEndOf="@+id/progressBar9"
-                app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/japan_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/japan_selector" />
 
-            <ImageButton
-                android:id="@+id/progressBar11"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="-10dp"
-                app:layout_constraintStart_toEndOf="@+id/progressBar10"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/japan_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="79dp"
+                    android:gravity="center"
+                    android:text="일본"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
 
-            <ImageButton
-                android:id="@+id/progressBar12"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                <TextView
+                    android:id="@+id/japan_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/japan_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="79dp"
+                    android:text="94,341"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/us_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:layout_constraintStart_toEndOf="@+id/japan_group"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/us_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/us_selector" />
+
+                <TextView
+                    android:id="@+id/us_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="69dp"
+                    android:layout_marginTop="63dp"
+                    android:layout_marginEnd="69dp"
+                    android:gravity="center"
+                    android:text="미국"
+                    android:textColor="@color/white"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/us_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/us_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="70dp"
+                    android:text="54,185"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/france_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="1dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/progressBar9" />
+                app:layout_constraintTop_toBottomOf="@+id/japan_group">
 
-            <ImageButton
-                android:id="@+id/progressBar13"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintStart_toEndOf="@+id/progressBar12"
-                app:layout_constraintTop_toBottomOf="@+id/progressBar10" />
+                <ImageView
+                    android:id="@+id/france_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/france_selector" />
 
-            <ImageButton
-                android:id="@+id/progressBar14"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintStart_toEndOf="@+id/progressBar13"
-                app:layout_constraintTop_toBottomOf="@+id/progressBar11" />
+                <TextView
+                    android:id="@+id/france_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="31dp"
+                    android:gravity="center"
+                    android:text="프랑스"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
 
-            <ImageButton
-                android:id="@+id/progressBar15"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/progressBar12" />
+                <TextView
+                    android:id="@+id/france_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/france_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="38dp"
+                    android:text="6,326"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
 
-            <ImageButton
-                android:id="@+id/progressBar16"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginStart="52dp"
-                android:layout_marginTop="-10dp"
-                app:layout_constraintStart_toEndOf="@+id/progressBar15"
-                app:layout_constraintTop_toBottomOf="@+id/progressBar13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/canada_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-6dp"
+                android:layout_marginTop="-22dp"
+                app:layout_constraintStart_toEndOf="@+id/france_group"
+                app:layout_constraintTop_toBottomOf="@+id/japan_group">
+
+                <ImageView
+                    android:id="@+id/canada_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/canada_selector" />
+
+                <TextView
+                    android:id="@+id/canada_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="19dp"
+                    android:gravity="center"
+                    android:text="캐나다"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/canada_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/canada_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="4,295"
+                    android:textColor="@color/white"
+                    android:textSize="11dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/uk_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintStart_toEndOf="@+id/france_group"
+                app:layout_constraintTop_toBottomOf="@+id/canada_group">
+
+                <ImageView
+                    android:id="@+id/uk_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uk_selector" />
+
+                <TextView
+                    android:id="@+id/uk_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="44dp"
+                    android:gravity="center"
+                    android:text="영국"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/uk_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/uk_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="46dp"
+                    android:text="8,967"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/germany_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="-5dp"
+                app:layout_constraintStart_toEndOf="@+id/uk_group"
+                app:layout_constraintTop_toBottomOf="@+id/us_group">
+
+                <ImageView
+                    android:id="@+id/germany_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/germany_selector" />
+
+                <TextView
+                    android:id="@+id/germany_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginEnd="54dp"
+                    android:gravity="center"
+                    android:text="독일"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/germany_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/germany_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="53dp"
+                    android:text="15,402"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </HorizontalScrollView>
 
-    <Button
+    <android.widget.Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/radius_beige"
         android:padding="10dp"
         android:text="관련 문화재 보러가기"
-        android:textSize="17dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/apple_sd_gothic_neo_eb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
