@@ -3,6 +3,39 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/circle_btn.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/edit_box_custom.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/fund_edit_custom.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/fund_progress_custom.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/radius_beige.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/radius_beige_empty.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/radius_gray.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/selector_btn_color.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/selector_country_btn_color.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/selector_sign_up_check.xml" value="0.118" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/drawable/sign_up_bottom_sheet_background.xml" value="0.141" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_fund_open.xml" value="0.16875" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_main.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_sign_up1.xml" value="0.152" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_sign_up2.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_sign_up3.xml" value="0.264" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_sign_up4.xml" value="0.2" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_sign_up5.xml" value="0.1140625" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/activity_sign_up6.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_contents.xml" value="0.16875" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_contents_culture.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_contents_story.xml" value="0.16875" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_fund.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_fund_home.xml" value="0.16875" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_fund_new.xml" value="0.16875" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_mypage.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fragment_qa.xml" value="0.19369369369369369" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/fund_list_custom.xml" value="0.16875" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/layout/sing_up_bottom_sheet.xml" value="0.16875" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/kamja/Documents/GitHub/KBxml/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1885" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2295" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/circle_btn.xml" value="0.2565" />

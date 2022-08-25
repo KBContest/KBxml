@@ -15,7 +15,7 @@
         android:weightSum="6">
 
         <ImageButton
-            android:id="@+id/contents_back_btn"
+            android:id="@+id/contents_back_btn5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="35dp"

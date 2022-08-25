@@ -1,10 +1,13 @@
 /*회원가입_2*/
 package com.example.kb
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import kotlinx.android.synthetic.main.activity_sign_up2.*
+
 
 class SignUpActivity2 : AppCompatActivity() {
 
@@ -16,8 +19,16 @@ class SignUpActivity2 : AppCompatActivity() {
         val bottomSheetDialog = BottomSheetDialog(this)
         bottomSheetDialog.setContentView(bottomSheetView)
 
-        findViewById<Button>(R.id.next_btn).setOnClickListener {
-            bottomSheetDialog.show()
+        contents_back_btn2.setOnClickListener(){
+            val intent = Intent(this, SignUpActivity1::class.java)
+            startActivity(intent)
+        }
+        next_btn2.setOnClickListener() {
+            //bottomSheetDialog.show()
+            val intent = Intent(this, SignUpActivity3::class.java)
+            val text = editTextTextEmailAddress.text.toString()
+            intent.putExtra("email", text)
+            startActivity(intent)
         }
 
     }

@@ -15,7 +15,7 @@
         android:weightSum="6">
 
         <ImageButton
-            android:id="@+id/contents_back_btn"
+            android:id="@+id/contents_back_btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="35dp"
@@ -53,7 +53,7 @@
     </LinearLayout>
 
     <android.widget.Button
-        android:id="@+id/next_btn"
+        android:id="@+id/next_btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

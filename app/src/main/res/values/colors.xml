@@ -14,5 +14,6 @@
     <color name="btn_gray">#646464</color>
     <color name="white_44">#66F4F3F0</color>
     <color name="white">#F4F3F0</color>
+    <color name="transparent">#00FFFFFF</color>
 
 </resources>
