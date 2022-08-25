@@ -26,7 +26,7 @@ class ContentsFragment : Fragment() {
         val pager:ViewPager2 = view.findViewById(R.id.contents_viewPager2)
         val tab:TabLayout = view.findViewById(R.id.contents_tabLayout)
 
-        pager.adapter = ContentsViewAdatper(childFragmentManager, lifecycle)
+        pager.adapter = ContentsViewAdapter(childFragmentManager, lifecycle)
 
         TabLayoutMediator(tab, pager){ tab, position ->
             when(position){

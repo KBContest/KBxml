@@ -14,9 +14,12 @@
         android:theme="@style/Theme.KB"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity2"
+            android:exported="false" />
+        <activity
             android:name=".QaActivity2"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".FundParticipationActivity3"
             android:exported="false" />
@@ -38,22 +41,19 @@
         <activity
             android:name=".SignUpActivity5"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SignUpActivity4"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SignUpActivity3"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".SignUpActivity6"
-            android:exported="false" />
-        <activity
             android:name=".SignUpActivity2"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SignUpActivity1"
             android:exported="false" />

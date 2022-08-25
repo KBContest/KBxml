@@ -6,8 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginRight="35dp"
-    android:layout_marginLeft="35dp">
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp">
 
     <ImageView
         android:id="@+id/fund_image"

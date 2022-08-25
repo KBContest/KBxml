@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@android:color/transparent"
-                android:paddingLeft="35dp"
+                android:paddingLeft="25dp"
                 android:paddingTop="45dp"
                 android:src="@drawable/btn_back" />
 
@@ -41,7 +41,7 @@
                 android:layout_marginEnd="0dp"
                 android:backgroundTint="@android:color/transparent"
                 android:paddingTop="45dp"
-                android:paddingRight="35dp"
+                android:paddingRight="25dp"
                 android:src="@drawable/share_icon" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_back_btn"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="15dp"
                 android:text="스토리"
                 android:textColor="@color/white"
@@ -85,7 +85,7 @@
                 android:layout_width="52dp"
                 android:layout_height="2dp"
                 android:layout_below="@id/story_text"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/white" />
 
@@ -94,7 +94,7 @@
                 android:layout_width="70dp"
                 android:layout_height="28dp"
                 android:layout_below="@+id/part_background"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/radius_beige"
                 android:text="일본 반출"
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_country"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
                 android:text="일본으로 반출된 우리 문화재 환수"
                 android:textColor="@color/white"
@@ -117,7 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_title"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/apple_sd_gothic_neo_m"
                 android:text="00 문화재 환수 사업 지원을 위한 모금 프로젝트"
@@ -129,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_sub_title"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="38dp"
                 android:text="모인 금액"
                 android:textColor="@color/white"
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_money_title"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="7dp"
                 android:text="1,450,000원"
                 android:textColor="@color/white"
@@ -149,12 +149,11 @@
             <ProgressBar
                 android:id="@+id/part_progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="300dp"
+                android:layout_width="320dp"
                 android:layout_height="3dp"
                 android:layout_below="@id/part_money"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="35dp"
                 android:max="100"
                 android:progress="80"
                 android:progressDrawable="@drawable/fund_progress_custom" />
@@ -166,7 +165,7 @@
                 android:layout_below="@id/part_money"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="7dp"
-                android:layout_marginEnd="35dp"
+                android:layout_marginEnd="25dp"
                 android:text="80%"
                 android:textColor="@color/white"
                 android:textSize="12dp" />
@@ -176,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/part_progressBar"
-                android:layout_marginLeft="71dp"
+                android:layout_marginLeft="61dp"
                 android:layout_marginTop="15dp"
                 android:src="@drawable/user_profile_3" />
 
@@ -185,7 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/part_progressBar"
-                android:layout_marginLeft="53dp"
+                android:layout_marginLeft="43dp"
                 android:layout_marginTop="15dp"
                 android:src="@drawable/user_profile_2" />
 
@@ -194,7 +193,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/part_progressBar"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
                 android:src="@drawable/user_profile_1" />
 
@@ -228,9 +227,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:layout_below="@+id/user_profile_1"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white_44" />
 
@@ -239,7 +238,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_line1"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:text="목표 금액"
                 android:textColor="@color/white"
                 android:textSize="11dp" />
@@ -262,7 +261,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_goal_money_title"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
                 android:text="펀딩 기간"
                 android:textColor="@color/white"
@@ -286,9 +285,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:layout_below="@+id/part_period_title"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white_44" />
 
@@ -297,7 +296,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/part_line2"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:src="@drawable/project_builder_profile" />
 
             <TextView
@@ -342,9 +341,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:layout_below="@+id/project_builder_profile"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white_44" />
 
@@ -353,7 +352,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/part_line3"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:text="프로젝트 대상"
                 android:textColor="@color/white"
                 android:textSize="16dp" />
@@ -363,7 +362,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_below="@id/project_item"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/yi_eumjeog" />
@@ -372,7 +371,7 @@
                 android:layout_width="81dp"
                 android:layout_height="20dp"
                 android:layout_below="@+id/project_item"
-                android:layout_marginStart="57dp"
+                android:layout_marginStart="62dp"
                 android:layout_marginTop="58dp"
                 android:layout_toEndOf="@+id/project_item_image"
                 android:background="@color/qa_contents_background" />
@@ -382,8 +381,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item"
-                android:layout_marginStart="62dp"
-                android:layout_marginLeft="35dp"
+                android:layout_marginStart="67dp"
                 android:layout_marginTop="52dp"
                 android:layout_toEndOf="@+id/project_item_image"
                 android:text="이음정필\n목포도도병풍"
@@ -396,7 +394,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item_name_kr"
-                android:layout_marginStart="45dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="7dp"
                 android:layout_toEndOf="@+id/project_item_image"
                 android:fontFamily="@font/apple_sd_gothic_neo_m"
@@ -410,7 +408,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item_image"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="55dp"
                 android:text="프로젝트 소개"
                 android:textColor="@color/white"
@@ -421,9 +419,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item_intro_title"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:fontFamily="@font/apple_sd_gothic_neo_l"
                 android:lineSpacingExtra="3dp"
                 android:text="이 프로젝트는 전세계에서 70여점 밖에 존재하지 않은 희귀한 금동반가
@@ -437,9 +435,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item_intro1"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:fontFamily="@font/apple_sd_gothic_neo_l"
                 android:lineSpacingExtra="3dp"
                 android:text="'공주 출도 금동반가사유상'은 높이가 16.3m의 작은 크기의 불상입니다.
@@ -454,9 +452,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item_intro2"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="130dp"
                 android:fontFamily="@font/apple_sd_gothic_neo_l"
                 android:lineSpacingExtra="3dp"
@@ -479,11 +477,11 @@
 
     <android.widget.Button
         android:id="@+id/part_btn"
-        android:layout_width="275dp"
+        android:layout_width="298dp"
         android:layout_height="50dp"
         android:layout_alignBottom="@+id/bottom_btn_background"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="35dp"
+        android:layout_marginStart="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/radius_beige"
         android:fontFamily="@font/apple_sd_gothic_neo_eb"
@@ -497,7 +495,7 @@
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="35dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/radius_gray"
         android:backgroundTint="@color/btn_gray"

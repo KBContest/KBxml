@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:fillViewport="true">
 
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -20,19 +20,24 @@
                 android:id="@+id/fund_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
                 android:divider="@android:color/transparent"/>
 
             <ImageButton
                 android:id="@+id/fundraiser_btn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/fund_opening_fundraiser"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="110dp"
                 android:background="@drawable/circle_btn"
-                android:layout_gravity="right|bottom"
-                android:layout_marginRight="40dp"
-                android:layout_marginBottom="40dp"/>
+                android:src="@drawable/fund_opening_fundraiser" />
 
-        </FrameLayout>
+        </RelativeLayout>
 
     </ScrollView>
 

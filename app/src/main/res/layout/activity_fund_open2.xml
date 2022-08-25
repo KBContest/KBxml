@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/btn_back"
         android:background="@android:color/transparent"
-        android:paddingLeft="35dp"
+        android:paddingLeft="25dp"
         android:paddingTop="45dp"
         android:paddingBottom="25dp"/>
 
@@ -23,7 +23,7 @@
         android:id="@+id/target_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginBottom="15dp"
         android:text="목표 금액"
         android:textColor="@color/white"
@@ -37,8 +37,8 @@
             android:id="@+id/target_amount_edit"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
             android:background="@drawable/fund_edit_custom"
             android:hint="최소 100,000"
             android:paddingBottom="5dp"
@@ -64,8 +64,8 @@
         android:id="@+id/fund_schedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
         android:text="모금 일정"
         android:textColor="@color/white"
         android:textSize="14dp"/>
@@ -73,8 +73,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:layout_marginTop="20dp">
 
         <ImageView

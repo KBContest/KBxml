@@ -28,23 +28,23 @@
                 android:text="환수 비하인드 스토리"
                 android:textSize="16dp"
                 android:textColor="@color/white"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:paddingBottom="15dp"
                 android:layout_weight="0.5"
                 android:gravity="bottom" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="440dp"
+                android:layout_height="460dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp">
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
 
                 <ImageView
                     android:id="@+id/contents_back_image"
                     android:layout_width="match_parent"
-                    android:layout_height="440dp"
+                    android:layout_height="460dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"

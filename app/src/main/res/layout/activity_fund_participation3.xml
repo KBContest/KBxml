@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/btn_back"
                 android:background="@android:color/transparent"
-                android:paddingLeft="35dp"
+                android:paddingLeft="25dp"
                 android:paddingTop="45dp"
                 android:paddingBottom="25dp"/>
 
@@ -76,8 +76,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginTop="35dp">
 
                 <ImageView
@@ -145,9 +145,9 @@
                 android:id="@+id/part_line1"
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white_44" />
 
@@ -155,7 +155,7 @@
                 android:id="@+id/part_profile_info_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
                 android:text="후원자 정보"
                 android:textColor="@color/white"
@@ -164,8 +164,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginTop="15dp">
 
                 <TextView
@@ -257,9 +257,9 @@
                 android:id="@+id/part_line2"
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white_44" />
 
@@ -267,7 +267,7 @@
                 android:id="@+id/part_pay_amount_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
                 android:text="후원 금액"
                 android:textColor="@color/white"
@@ -284,8 +284,8 @@
                     android:background="@drawable/edit_box_custom"
                     android:text="최종 후원 금액"
                     android:textColor="@color/white_44"
-                    android:layout_marginRight="35dp"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
                     android:layout_marginTop="15dp"
                     android:padding="14dp"
                     android:fontFamily="@font/apple_sd_gothic_neo_m" />
@@ -309,9 +309,9 @@
                 android:id="@+id/part_line3"
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white_44" />
 
@@ -319,7 +319,7 @@
                 android:id="@+id/part_pay_way_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
                 android:text="결제 수단"
                 android:textColor="@color/white"
@@ -329,8 +329,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp">
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
 
                 <CheckBox
                     android:id="@+id/part_pay_way_card"
@@ -364,8 +364,8 @@
                 android:text="결제하기"
                 android:textColor="@color/black"
                 android:textSize="16dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginRight="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
                 android:layout_marginTop="35dp"
                 android:layout_marginBottom="32dp"/>
 

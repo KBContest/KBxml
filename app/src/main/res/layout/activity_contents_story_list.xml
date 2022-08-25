@@ -17,7 +17,7 @@
         android:layout_height="0dp"
         android:src="@drawable/btn_back"
         android:background="@android:color/transparent"
-        android:paddingLeft="35dp"
+        android:paddingLeft="25dp"
         android:layout_weight="0.7"
         android:layout_marginTop="20dp"/>
 
@@ -28,8 +28,8 @@
         android:text="일본서 고국으로 돌아온\n문화재 이야기"
         android:textColor="@color/white"
         android:textSize="24dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:layout_weight="1"
         android:fontFamily="@font/apple_sd_gothic_neo_eb"/>
 
@@ -40,7 +40,7 @@
         android:layout_weight="4.3"
         android:divider="@color/white_44"
         android:dividerHeight="1.5px"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp" />
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
 
 </LinearLayout>
