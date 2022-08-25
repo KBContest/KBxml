@@ -20,6 +20,10 @@
                 android:id="@+id/part_background"
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
                 android:alpha=".75"
                 android:scaleType="centerCrop"
                 android:src="@drawable/yi_eumjeog" />
