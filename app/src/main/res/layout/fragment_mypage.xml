@@ -1,16 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
     tools:context=".MypageFragment">
 
     <!--마이페이지_1-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Mypage"
-        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_profile"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용자 02"
+        android:textSize="17dp"
+        android:textColor="@color/white"/>
+
+    <android.widget.Button
+        android:id="@+id/modify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="프로필 수정"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:background="@drawable/radius_beige"/>
+
+    <android.widget.Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="관심 있는 문화재"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
+        android:gravity="left|center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:drawableRight="@drawable/go_page_btn"/>
+
+    <android.widget.Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="관심 있는 콘텐츠"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
+        android:gravity="left|center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:drawableRight="@drawable/go_page_btn"/>
+
+    <android.widget.Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="관심 있는 프로젝트"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
+        android:gravity="left|center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:drawableRight="@drawable/go_page_btn"/>
+
+    <android.widget.Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내가 쓴 글"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
+        android:gravity="left|center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:drawableRight="@drawable/go_page_btn"/>
+
+    <android.widget.Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 모금 프로젝트"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
+        android:gravity="left|center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:drawableRight="@drawable/go_page_btn"/>
+
+</LinearLayout>
