@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--모금 개설_1 리스트 커스텀-->
+<!--모금 개설_1, 마이페이지_관심있는 프로젝트,
+ 마이페이지_내모금프로젝트_개설 리스트 커스텀-->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

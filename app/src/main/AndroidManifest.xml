@@ -14,6 +14,21 @@
         android:theme="@style/Theme.KB"
         tools:targetApi="31">
         <activity
+            android:name=".MypageFundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MypageWroteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MypageProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MypageContentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MypageCultureActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity3"
             android:exported="false" />
         <activity

@@ -7,6 +7,7 @@
     android:gravity="center_horizontal"
     android:layout_marginRight="25dp"
     android:layout_marginLeft="25dp"
+    android:layout_marginTop="40dp"
     tools:context=".MypageFragment">
 
     <!--마이페이지_1-->
@@ -15,12 +16,15 @@
         android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:src="@drawable/user_profile"/>
 
     <TextView
         android:id="@+id/profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="사용자 02"
         android:textSize="17dp"
         android:textColor="@color/white"/>
@@ -29,10 +33,19 @@
         android:id="@+id/modify_btn"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:text="프로필 수정"
         android:textColor="@color/black"
         android:textSize="15dp"
         android:background="@drawable/radius_beige"/>
+
+    <View
+        android:id="@+id/divide_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/white_44" />
 
     <android.widget.Button
         android:id="@+id/btn1"
@@ -43,9 +56,18 @@
         android:textSize="14dp"
         android:fontFamily="@font/apple_sd_gothic_neo_m"
         android:gravity="left|center_vertical"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/transparent"
         android:drawableRight="@drawable/go_page_btn"/>
+
+    <View
+        android:id="@+id/divide_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_44" />
 
     <android.widget.Button
         android:id="@+id/btn2"
@@ -56,9 +78,18 @@
         android:textSize="14dp"
         android:fontFamily="@font/apple_sd_gothic_neo_m"
         android:gravity="left|center_vertical"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/transparent"
         android:drawableRight="@drawable/go_page_btn"/>
+
+    <View
+        android:id="@+id/divide_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_44" />
 
     <android.widget.Button
         android:id="@+id/btn3"
@@ -69,9 +100,18 @@
         android:textSize="14dp"
         android:fontFamily="@font/apple_sd_gothic_neo_m"
         android:gravity="left|center_vertical"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/transparent"
         android:drawableRight="@drawable/go_page_btn"/>
+
+    <View
+        android:id="@+id/divide_line4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_44" />
 
     <android.widget.Button
         android:id="@+id/btn4"
@@ -82,9 +122,18 @@
         android:textSize="14dp"
         android:fontFamily="@font/apple_sd_gothic_neo_m"
         android:gravity="left|center_vertical"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/transparent"
         android:drawableRight="@drawable/go_page_btn"/>
+
+    <View
+        android:id="@+id/divide_line5"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_44" />
 
     <android.widget.Button
         android:id="@+id/btn5"
@@ -95,8 +144,17 @@
         android:textSize="14dp"
         android:fontFamily="@font/apple_sd_gothic_neo_m"
         android:gravity="left|center_vertical"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/transparent"
         android:drawableRight="@drawable/go_page_btn"/>
+
+    <View
+        android:id="@+id/divide_line6"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white_44" />
 
 </LinearLayout>
