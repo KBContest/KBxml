@@ -34,20 +34,22 @@
         <activity
             android:name=".SignUpActivity2"
             android:exported="false" />
-        <activity
-            android:name=".SignUpActivity1"
-            android:exported="false" />
+
         <activity
             android:name=".ContentsStoryListActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".SignUpActivity1"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         </activity>
     </application>
 
