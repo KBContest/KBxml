@@ -6,10 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".FundBestFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/fund_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/fund_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none"/>
+
+            <ImageButton
+                android:id="@+id/fundraiser_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="110dp"
+                android:background="@drawable/circle_btn"
+                android:src="@drawable/fund_opening_fundraiser" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </FrameLayout>

@@ -7,10 +7,143 @@
 
     <!--콘텐츠_2 문화재-->
 
-    <TextView
+    <ScrollView
+        android:id="@+id/contents_culture_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="문화재"
-        android:textColor="@color/white_44"/>
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="80dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/contents_culture_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="문화재 스토리"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingBottom="15dp"
+                android:layout_weight="0.5"
+                android:gravity="bottom" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="460dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <ImageView
+                    android:id="@+id/contents_back_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="460dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/contents_back" />
+
+                <TextView
+                    android:id="@+id/contents_culture_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/contents_back_image"
+                    android:layout_alignEnd="@+id/contents_back_image"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_eb"
+                    android:text="일본서 고국으로 돌아온\n문화재 이야기"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <ImageButton
+                    android:id="@+id/contents_culture_list_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/contents_back_image"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/contents_list_btn_icon" />
+
+                <View
+                    android:id="@+id/title_btn_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#951B1B1B"/>
+
+                <Button
+                    android:id="@+id/contents_culture_title_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/contents_culture_title_btn2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/contents_list_detail_btn"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:gravity="left|center_vertical"
+                    android:padding="18dp"
+                    android:text="망국의 옹주, 덕혜옹주의 스란치마"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/title_btn_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/contents_culture_title_btn1"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white_44"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                <Button
+                    android:id="@+id/contents_culture_title_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:drawableRight="@drawable/contents_list_detail_btn"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:gravity="left|center_vertical"
+                    android:padding="18dp"
+                    android:text="다섯 개의 산봉우리, 일월오봉도"
+                    android:textSize="14dp"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>
