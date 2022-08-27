@@ -48,7 +48,7 @@
         android:background="@color/white_44" />
 
     <android.widget.Button
-        android:id="@+id/btn1"
+        android:id="@+id/culture_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="관심 있는 문화재"
@@ -70,7 +70,7 @@
         android:background="@color/white_44" />
 
     <android.widget.Button
-        android:id="@+id/btn2"
+        android:id="@+id/contents_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="관심 있는 콘텐츠"
@@ -92,7 +92,7 @@
         android:background="@color/white_44" />
 
     <android.widget.Button
-        android:id="@+id/btn3"
+        android:id="@+id/project_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="관심 있는 프로젝트"
@@ -114,7 +114,7 @@
         android:background="@color/white_44" />
 
     <android.widget.Button
-        android:id="@+id/btn4"
+        android:id="@+id/wrote_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="내가 쓴 글"
@@ -136,7 +136,7 @@
         android:background="@color/white_44" />
 
     <android.widget.Button
-        android:id="@+id/btn5"
+        android:id="@+id/fund_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="내 모금 프로젝트"

@@ -64,11 +64,11 @@
         android:layout_marginTop="13dp"
         android:layout_marginRight="20dp"
         android:ellipsize="end"
+        android:fontFamily="@font/apple_sd_gothic_neo_m"
         android:maxLines="2"
         android:text="A. 일본으로 반출된 문화재로는 현재 OO, AA가 있습니다.
 이 중 AA는 올해 반환되었구요. 일본으로 반출된 문화재로는 현재 OO, AA가 있습니다.
 이 중 AA는 올해 반환되었구요."
-        android:fontFamily="@font/apple_sd_gothic_neo_m"
         android:textColor="@color/white"
         android:textSize="14dp" />
 
