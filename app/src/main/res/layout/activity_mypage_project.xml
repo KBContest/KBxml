@@ -42,7 +42,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:layout_below="@id/top_group">
+        android:layout_below="@id/top_group"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,7 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:divider="@drawable/list_divider"
-                android:dividerHeight="1.5px"/>
+                android:dividerHeight="1.5px"
+                android:scrollbars="none"/>
 
         </LinearLayout>
 

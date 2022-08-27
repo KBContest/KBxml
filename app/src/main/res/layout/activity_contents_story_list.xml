@@ -41,6 +41,7 @@
         android:divider="@color/white_44"
         android:dividerHeight="1.5px"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp" />
+        android:layout_marginRight="25dp"
+        android:scrollbars="none"/>
 
 </LinearLayout>
