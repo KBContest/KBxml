@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         main_btn = view.findViewById(R.id.main_btn)
 
         main_btn.setOnClickListener{
-            val intent = Intent(context, HomeActivity2::class.java)
+            val intent = Intent(context, HomeJapanActivity::class.java)
             startActivity(intent)
         }
         /*xml 확인위해 임시 연결(삭제해도 됨)*/

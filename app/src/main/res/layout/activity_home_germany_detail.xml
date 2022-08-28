@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity3">
+    tools:context=".HomeGermanyDetailActivity">
 
-    <!--메인화면_3 상세보기-->
+    <!--메인화면_3_독일 상세보기-->
 
     <ScrollView
         android:layout_width="match_parent"

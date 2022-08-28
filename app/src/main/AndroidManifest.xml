@@ -14,6 +14,24 @@
         android:theme="@style/Theme.KB"
         tools:targetApi="31">
         <activity
+            android:name=".HomeGermanyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeGermanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeUsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContentsCultureDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContentsCultureListActivity"
+            android:exported="false" />
+        <activity
             android:name=".MypageFundActivity"
             android:exported="false" />
         <activity
@@ -29,10 +47,10 @@
             android:name=".MypageCultureActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity3"
+            android:name=".HomeJapanDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity2"
+            android:name=".HomeJapanActivity"
             android:exported="false" />
         <activity
             android:name=".QaActivity2"

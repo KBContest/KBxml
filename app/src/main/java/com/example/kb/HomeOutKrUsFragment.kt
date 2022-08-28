@@ -1,4 +1,4 @@
-/*메인_잃어버린 문화재*/
+/*메인_미국_잃어버린 문화재*/
 package com.example.kb
 
 import android.os.Bundle
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [HomeOutKrFragment.newInstance] factory method to
+ * Use the [HomeOutKrUsFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class HomeOutKrFragment : Fragment() {
+class HomeOutKrUsFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +35,7 @@ class HomeOutKrFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_out_kr, container, false)
+        return inflater.inflate(R.layout.fragment_home_out_kr_us, container, false)
     }
 
     companion object {
@@ -45,12 +45,12 @@ class HomeOutKrFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment MainOutKrFragment.
+         * @return A new instance of fragment HomeOutKrUsFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            HomeOutKrFragment().apply {
+            HomeOutKrUsFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
