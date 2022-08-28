@@ -34,8 +34,6 @@ class HomeFragment : Fragment() {
 
         // main_btn = view.findViewById(R.id.main_btn)
 
-
-
         bind.japanCircle.setOnClickListener {
             main_btn.visibility = View.VISIBLE
             japan = true
