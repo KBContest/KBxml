@@ -17,15 +17,16 @@ class ContentsStoryListActivity : AppCompatActivity(), ListBtnClickListener {
     var listView: ListView? = null
     var listBtnClickListener: ListBtnClickListener? = null
 
-    /*
     val list_array = arrayListOf<ContentsStoryListModels>(
-    ContentsStoryListModels("1",""),
-    ContentsStoryListModels("2",""),
-    ContentsStoryListModels("3",""),
-    ContentsStoryListModels("4",""),
-    ContentsStoryListModels("5","")
+        ContentsStoryListModels("망국의 옹주, 덕혜옹주의 스란치마", ""),
+        ContentsStoryListModels("다섯개의 산봉우리, 일월오봉도",""),
+        ContentsStoryListModels("어보를 품은 상자, 보록", ""),
+        ContentsStoryListModels("빼어나게 아름다운 금강산, 금강내산전도", ""),
+        ContentsStoryListModels("문신들의 뱃놀이를 그린, 독서당 계회도",""),
+        ContentsStoryListModels("검은 옻칠과 영롱한 자개 장식, 나전 칠기", ""),
+        ContentsStoryListModels("고종의 국새, 국새 황제지보", ""),
+        ContentsStoryListModels("조선시대 왕들의 글씨를 탁본한, 열성어필", "")
     )
-    */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +34,8 @@ class ContentsStoryListActivity : AppCompatActivity(), ListBtnClickListener {
 
         val items= ArrayList<ContentsStoryListModels?>() // new
 
-        // val list_adapter = ContentsStoryListAdapter(this,list_array) // 기존
-        // contents_story_list.adapter = list_adapter // 기존
+        val list_adapter = ContentsStoryListAdapter(this,list_array) // 기존
+        contents_story_list.adapter = list_adapter // 기존
 
         adapter = ContentsListBtnAdapter(this, R.layout.contents_list_custom, items, this)
 
@@ -63,7 +64,7 @@ class ContentsStoryListActivity : AppCompatActivity(), ListBtnClickListener {
 
 
         // 콘텐츠 리스트 생성
-        item = ContentsStoryListModels()
+        /*item = ContentsStoryListModels()
         item.title = "첫번째 콘텐츠 이름"
         list.add(item)
         i++
@@ -80,7 +81,7 @@ class ContentsStoryListActivity : AppCompatActivity(), ListBtnClickListener {
 
         item = ContentsStoryListModels()
         item.title = "네번째 콘텐츠 이름"
-        list.add(item)
+        list.add(item)*/
         return true
     }
 
