@@ -33,18 +33,18 @@ class ContentsStoryListActivity : AppCompatActivity(), ListBtnClickListener {
 
         val items= ArrayList<ContentsStoryListModels?>() // new
 
-    // val list_adapter = ContentsStoryListAdapter(this,list_array) // 기존
-    // contents_story_list.adapter = list_adapter // 기존
+        // val list_adapter = ContentsStoryListAdapter(this,list_array) // 기존
+        // contents_story_list.adapter = list_adapter // 기존
 
         adapter = ContentsListBtnAdapter(this, R.layout.contents_list_custom, items, this)
 
-    // 리스트뷰 참조 및 Adapter달기
+        // 리스트뷰 참조 및 Adapter달기
     }
 
     // button2가 눌려졌을 때 실행되는 onClick함수
     fun onClick(v: View) {
 
-    // ListBtnClickListener(MainActivity)의 onListBtnClick() 함수 호출
+        // ListBtnClickListener(MainActivity)의 onListBtnClick() 함수 호출
         if (listBtnClickListener != null) {
             listBtnClickListener!!.onListBtnClick(v.tag as Int)
         }
@@ -58,11 +58,11 @@ class ContentsStoryListActivity : AppCompatActivity(), ListBtnClickListener {
             list = java.util.ArrayList()
         }
 
-    // 순서를 위한 i 값을 1로 초기화
+        // 순서를 위한 i 값을 1로 초기화
         i = 1
 
 
-    // 콘텐츠 리스트 생성
+        // 콘텐츠 리스트 생성
         item = ContentsStoryListModels()
         item.title = "첫번째 콘텐츠 이름"
         list.add(item)
