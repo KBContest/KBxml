@@ -10,7 +10,7 @@
 
     <!--모금_1-->
 
-    <SearchView
+    <android.widget.SearchView
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -24,6 +24,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--<ListView
+        android:id="@+id/fund_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />-->
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/fund_tabLayout"
