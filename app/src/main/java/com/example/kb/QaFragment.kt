@@ -37,7 +37,16 @@ class QaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_qa, container, false)
+
+        val view = inflater.inflate(R.layout.fragment_qa, container, false)
+        val qnaBtn = view.findViewById<Button>(R.id.qna_btn)
+
+        println("-- setOnClickListener 밖 --")
+        qnaBtn.setOnClickListener {
+            println("-- setOnClickListener 안 --")
+        }
+
+        return view
     }
 
     companion object {
