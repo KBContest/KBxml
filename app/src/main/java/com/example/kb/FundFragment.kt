@@ -8,11 +8,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
+import android.widget.ListView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.firebase.database.*
 
-class FundFragment() : Fragment(){
+class FundFragment() : Fragment() {
+    private lateinit var dbRef: DatabaseReference
+    private lateinit var adapter: Adapter
+    private lateinit var listView: ListView
+
     constructor(parcel: Parcel) : this() {
     }
 
@@ -27,29 +34,63 @@ class FundFragment() : Fragment(){
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_fund, container, false)
-        val pager: ViewPager2 = view.findViewById(R.id.fund_viewPager2)
-        val tab: TabLayout = view.findViewById(R.id.fund_tabLayout)
 
-        pager.adapter = FundViewAdapter(childFragmentManager, lifecycle)
+        adapter = CulturalHeritageAdapter(container!!.context)
+        listView = view.findViewById<ListView>(R.id.fund_listView)
+        listView.adapter = adapter as CulturalHeritageAdapter
 
-        TabLayoutMediator(tab, pager) { tab, position ->
-            when (position) {
-                0 -> {
-                    tab.text = "홈"
+        dbRef = FirebaseDatabase.getInstance().getReference("test")
+
+        dbRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    for (data in snapshot.children) {
+                        val modelResult = data.getValue(CulturalHeritage::class.java)
+
+                        (adapter as CulturalHeritageAdapter).addItem(
+                            data.key!!.toInt(),
+                            modelResult!!.country,
+                            modelResult!!.title,
+                            modelResult!!.targetMoney,
+                            modelResult!!.currentMoney)
+                    }
                 }
-                1 -> {
-                    tab.text = "인기"
-                }
-                2-> {
-                    tab.text = "신규"
-                }
-                3-> {
-                    tab.text = "마감임박"
-                }
+
+                (adapter as CulturalHeritageAdapter).notifyDataSetChanged()
             }
-        }.attach()
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
 
         return view
-
     }
+
+    /*
+    private fun getData() {
+        dbRef = FirebaseDatabase.getInstance().getReference("CulturalHeritage")
+
+        dbRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    for (data in snapshot.children) {
+                        val modelResult = data.getValue(CulturalHeritage::class.java)
+
+                        adapter.addItem(
+                            data.key!!.toInt(),
+                            modelResult!!.country,
+                            modelResult!!.title,
+                            modelResult!!.targetMoney,
+                            modelResult!!.currentMoney)
+                    }
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
+    }
+     */
 }
