@@ -16,6 +16,6 @@ class ContentsStoryDetailActivity : AppCompatActivity() {
             settings.javaScriptEnabled = true
         }
         // 웹뷰에 사용될 주소
-        contents_story_webView.loadUrl("")
+        contents_story_webView.loadUrl("file:///android_asset/몽유도원도 39360de558124054982fbb86b9ab91e5.html")
     }
 }
