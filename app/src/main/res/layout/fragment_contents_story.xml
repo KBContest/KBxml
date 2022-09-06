@@ -131,7 +131,7 @@
                     android:fontFamily="@font/apple_sd_gothic_neo_m"
                     android:gravity="left|center_vertical"
                     android:padding="18dp"
-                    android:text="다섯 개의 산봉우리, 일월오봉도"
+                    android:text="문신들의 뱃놀이를 그린, 독서당 계회도"
                     android:textSize="14dp"
                     android:background="@android:color/transparent"/>
 

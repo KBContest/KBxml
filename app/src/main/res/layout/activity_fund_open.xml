@@ -157,7 +157,7 @@
             <EditText
                 android:id="@+id/project_intro_edit"
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="150dp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/edit_box_custom"
                 android:gravity="top"
@@ -181,7 +181,7 @@
             <EditText
                 android:id="@+id/project_intro_short_edit"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="110dp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/edit_box_custom"
                 android:gravity="top"
@@ -203,39 +203,39 @@
                 android:textColor="@color/white"
                 android:textSize="14dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/item_picture1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radius_white_empty"
+                android:src="@drawable/picture_icon"
+                android:padding="35dp" />
+
+            <TextView
+                android:id="@+id/project_intro_name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginRight="25dp">
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="문화재 명칭"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
 
-                <ImageView
-                    android:id="@+id/item_picture1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/radius_white_empty"
-                    android:src="@drawable/picture_icon"
-                    android:padding="35dp" />
-
-                <ImageView
-                    android:id="@+id/item_picture2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/radius_white_empty"
-                    android:src="@drawable/picture_icon"
-                    android:padding="35dp" />
-
-                <ImageView
-                    android:id="@+id/item_picture3"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/radius_white_empty"
-                    android:src="@drawable/picture_icon"
-                    android:padding="35dp" />
-
-            </LinearLayout>
+            <EditText
+                android:id="@+id/project_intro_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/edit_box_custom"
+                android:gravity="top"
+                android:hint="프로젝트 대상인 문화재 명칭을 작성해주세요."
+                android:inputType="textImeMultiLine"
+                android:maxLines="3"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_44"
+                android:textSize="12dp" />
 
             <android.widget.Button
                 android:layout_width="match_parent"
