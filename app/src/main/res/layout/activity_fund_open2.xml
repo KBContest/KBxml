@@ -190,6 +190,7 @@
             android:textSize="11dp" />
 
         <android.widget.Button
+            android:id="@+id/fund_end_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
