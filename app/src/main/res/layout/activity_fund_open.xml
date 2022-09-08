@@ -80,7 +80,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_j_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -90,7 +90,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_c_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -100,7 +100,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_f_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -110,7 +110,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_u_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -120,7 +120,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_g_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -130,7 +130,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_r_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -237,7 +237,7 @@
                 android:textColorHint="@color/white_44"
                 android:textSize="12dp" />
 
-            <android.widget.Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
