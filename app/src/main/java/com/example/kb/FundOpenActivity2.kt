@@ -108,8 +108,8 @@ class FundOpenActivity2 : AppCompatActivity() {
                 val fund = CulturalHeritage(fundId, title, country, introEdit, introShortEdit, projectName, targetAmount, currentAmount, startDay, endDay)
                 dbRef.child(fundId.toString()).setValue(fund).addOnSuccessListener {
                     // Storage에 이미지 저장
-                    storageRef = FirebaseStorage.getInstance().getReference("test/$fundId")
-                    storageRef.putFile(imageUri)
+                    storageRef = FirebaseStorage.getInstance().reference
+                    storageRef.child("test/$fundId.jpg").putFile(imageUri)
                     // 모금 홈 화면으로 전환
                     val intent = Intent(this, FundFragment::class.java)
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
