@@ -1,6 +1,7 @@
 /*모금 개설_2*/
 package com.example.kb
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,7 @@ class FundOpenActivity : AppCompatActivity() {
     private lateinit var introEdit: String
     private lateinit var introShortEdit: String
 
+    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fund_open)
@@ -39,21 +41,27 @@ class FundOpenActivity : AppCompatActivity() {
         // 국가 선택
         country_j_btn.setOnClickListener {
             country = "일본"
+            country_j_btn.isSelected = !country_j_btn.isSelected;
         }
         country_c_btn.setOnClickListener {
             country = "중국"
+            country_c_btn.isSelected = !country_c_btn.isSelected;
         }
         country_f_btn.setOnClickListener {
             country = "프랑스"
+            country_f_btn.isSelected = !country_f_btn.isSelected;
         }
         country_u_btn.setOnClickListener {
             country = "미국"
+            country_u_btn.isSelected = !country_u_btn.isSelected;
         }
         country_g_btn.setOnClickListener {
             country = "독일"
+            country_g_btn.isSelected = !country_g_btn.isSelected;
         }
         country_r_btn.setOnClickListener {
             country = "러시아"
+            country_r_btn.isSelected = !country_r_btn.isSelected;
         }
 
         // 다음 페이지로 넘어가는 버튼 클릭
