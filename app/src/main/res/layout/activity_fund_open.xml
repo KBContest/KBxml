@@ -80,7 +80,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_j_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -90,7 +90,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_c_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -100,7 +100,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_f_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -110,7 +110,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_u_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -120,7 +120,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_g_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -130,7 +130,7 @@
                         android:textColor="@color/selector_country_text_color"
                         android:textSize="12dp" />
 
-                    <android.widget.Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/country_r_btn"
                         android:layout_width="55dp"
                         android:layout_height="30dp"
@@ -162,7 +162,6 @@
                 android:background="@drawable/edit_box_custom"
                 android:gravity="top"
                 android:hint="프로젝트 의도 및 상세 내용을 적어보세요."
-                android:inputType="textImeMultiLine"
                 android:padding="15dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white_44"
@@ -186,7 +185,6 @@
                 android:background="@drawable/edit_box_custom"
                 android:gravity="top"
                 android:hint="프로젝트 의도 및 상세 내용을 적어보세요."
-                android:inputType="textImeMultiLine"
                 android:maxLines="3"
                 android:padding="15dp"
                 android:textColor="@color/white"
@@ -204,7 +202,7 @@
                 android:textSize="14dp" />
 
             <ImageView
-                android:id="@+id/item_picture1"
+                android:id="@+id/item_picture"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginRight="20dp"
@@ -230,7 +228,6 @@
                 android:background="@drawable/edit_box_custom"
                 android:gravity="top"
                 android:hint="프로젝트 대상인 문화재 명칭을 작성해주세요."
-                android:inputType="textImeMultiLine"
                 android:maxLines="3"
                 android:padding="15dp"
                 android:textColor="@color/white"

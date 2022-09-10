@@ -18,6 +18,7 @@ class FundFragment() : Fragment() {
     private lateinit var dbRef: DatabaseReference
     private lateinit var adapter: Adapter
     private lateinit var listView: ListView
+    var fundIdList = arrayListOf<Int>()
     private var fundId = 0
     private lateinit var fundraiserBtn: ImageButton
 
@@ -49,13 +50,15 @@ class FundFragment() : Fragment() {
                         val modelResult = data.getValue(CulturalHeritage::class.java)
 
                         (adapter as CulturalHeritageAdapter).addItem(
-                            data.key!!.toInt(),
+                            modelResult!!.fundId,
                             modelResult!!.country,
                             modelResult!!.title,
                             modelResult!!.targetAmount,
                             modelResult!!.currentAmount)
 
-                        fundId++
+                        fundIdList.add(modelResult!!.fundId)
+
+                        // data.key!!.toInt()
                     }
                 }
 
@@ -67,8 +70,21 @@ class FundFragment() : Fragment() {
             }
         })
 
+        // 모금 리스트 클릭
+        listView.isClickable = true
+        listView.setOnItemClickListener { adapterView, view, i, l ->
+            activity?.let {
+                val intent = Intent(context, FundParticipationActivity::class.java)
+                intent.putExtra("fundId", fundIdList[i])
+                startActivity(intent)
+            }
+        }
+
+        // 모금 생성 버튼 클릭
         fundraiserBtn = view.findViewById<ImageButton>(R.id.fundraiser_btn)
         fundraiserBtn.setOnClickListener {
+            if (!fundIdList.isEmpty())
+                fundId = fundIdList.last()
             activity?.let {
                 val intent = Intent(context, FundOpenActivity::class.java)
                 intent.putExtra("fundId", fundId)
@@ -78,31 +94,4 @@ class FundFragment() : Fragment() {
 
         return view
     }
-
-    /*
-    private fun getData() {
-        dbRef = FirebaseDatabase.getInstance().getReference("CulturalHeritage")
-
-        dbRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()) {
-                    for (data in snapshot.children) {
-                        val modelResult = data.getValue(CulturalHeritage::class.java)
-
-                        adapter.addItem(
-                            data.key!!.toInt(),
-                            modelResult!!.country,
-                            modelResult!!.title,
-                            modelResult!!.targetMoney,
-                            modelResult!!.currentMoney)
-                    }
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
-        })
-    }
-     */
 }

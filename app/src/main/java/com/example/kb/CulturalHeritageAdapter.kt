@@ -27,10 +27,10 @@ class CulturalHeritageAdapter (private val context: Context) : BaseAdapter() {
         return 0
     }
 
-    fun addItem(id: Int, country: String, title: String, targetAmount: Int, currentAmount: Int) {
+    fun addItem(fundId: Int, country: String, title: String, targetAmount: Int, currentAmount: Int) {
         var item = CulturalHeritage();
 
-        item.id = id
+        item.fundId = fundId
         item.country = country
         item.title = title
         item.targetAmount = targetAmount
@@ -57,7 +57,7 @@ class CulturalHeritageAdapter (private val context: Context) : BaseAdapter() {
         val culturalHeritage = culturalHeritageList[position]
 
         // ImageView
-        val id = culturalHeritage.id
+        val id = culturalHeritage.fundId
         val storageRef = FirebaseStorage.getInstance().reference.child("test/$id.jpg")
         val localFile = File.createTempFile("tempImage", "jpg")
         storageRef.getFile(localFile).addOnSuccessListener {
