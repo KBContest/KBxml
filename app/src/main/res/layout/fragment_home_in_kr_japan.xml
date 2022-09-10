@@ -41,11 +41,13 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/in_item_image1"
                         android:layout_width="167dp"
                         android:layout_height="167dp"
-                        android:src="@drawable/mask"/>
+                        android:src="@drawable/mask"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"/>
 
                     <TextView
                         android:id="@+id/in_item_title_kr1"
@@ -74,11 +76,13 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/in_item_image2"
                         android:layout_width="167dp"
                         android:layout_height="167dp"
-                        android:src="@drawable/burial_urn"/>
+                        android:src="@drawable/burial_urn"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"/>
 
                     <TextView
                         android:id="@+id/in_item_title_kr2"
@@ -109,11 +113,13 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/in_item_image3"
                     android:layout_width="370dp"
                     android:layout_height="167dp"
-                    android:src="@drawable/gukhwado"/>
+                    android:src="@drawable/gukhwado"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"/>
 
                 <TextView
                     android:id="@+id/in_item_title_kr3"
@@ -147,11 +153,13 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/in_item_image4"
                         android:layout_width="167dp"
                         android:layout_height="167dp"
-                        android:src="@drawable/yi_seon_je"/>
+                        android:src="@drawable/yi_seon_je"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"/>
 
                     <TextView
                         android:id="@+id/in_item_title_kr4"
@@ -180,11 +188,13 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
+                    <ImageButton
                         android:id="@+id/in_item_image5"
                         android:layout_width="167dp"
                         android:layout_height="167dp"
-                        android:src="@drawable/lotus_design"/>
+                        android:src="@drawable/lotus_design"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"/>
 
                     <TextView
                         android:id="@+id/in_item_title_kr6"
