@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="212dp"
                     android:alpha=".75"
-                    android:src="@drawable/contents_3_back" />
+                    android:src="@drawable/contents_story_top1" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -75,24 +75,35 @@
 
             </RelativeLayout>
 
-            <WebView
-                android:id="@+id/contents_story_webView"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_below="@+id/re_group"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="-3dp"
-                android:layout_marginEnd="0dp"
-                android:scrollbars="none"
-                tools:ignore="WebViewLayout" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/webviewcontainer"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/re_group">
+
+                <WebView
+                    android:id="@+id/contents_story_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginEnd="0dp"
+                    android:scrollbars="none"
+                    tools:ignore="WebViewLayout" />
+
+            </RelativeLayout>
+
 
             <RelativeLayout
                 android:id="@+id/re_group2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/contents_story_webView"
+                android:layout_below="@id/webviewcontainer"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:padding="25dp">
@@ -159,12 +170,12 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
-                    android:background="@drawable/other_contents1"
+                    android:background="@drawable/sub_contents2"
                     android:drawableRight="@drawable/contents_list_detail_btn"
                     android:gravity="left|center_vertical"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="다섯 개의 산봉우리, 일월오봉도"
+                    android:text="태토와 유약의 색, 이선제 묘지"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
 
@@ -187,12 +198,12 @@
                     android:layout_alignParentBottom="true"
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
-                    android:background="@drawable/other_contents2"
+                    android:background="@drawable/sub_contents3"
                     android:drawableRight="@drawable/contents_list_detail_btn"
                     android:gravity="left|center_vertical"
-                    android:text="빼어나게 아름다운 금강산, 금강내산전도"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="문신들의 뱃놀이를 그린, 독서당 계회도"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
 

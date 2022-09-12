@@ -378,8 +378,8 @@
 
             <ImageView
                 android:id="@+id/project_item_image"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
                 android:layout_below="@id/project_item"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
@@ -391,7 +391,7 @@
                 android:layout_height="20dp"
                 android:layout_below="@+id/project_item"
                 android:layout_marginStart="62dp"
-                android:layout_marginTop="58dp"
+                android:layout_marginTop="84dp"
                 android:layout_toEndOf="@+id/project_item_image"
                 android:background="@color/qa_contents_background" />
 
@@ -401,26 +401,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item"
                 android:layout_marginStart="67dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="77dp"
                 android:layout_toEndOf="@+id/project_item_image"
                 android:text="이음정필\n목포도도병풍"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14dp" />
-
-            <TextView
-                android:id="@+id/project_item_name_en"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/project_item_name_kr"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="7dp"
-                android:layout_toEndOf="@+id/project_item_image"
-                android:fontFamily="@font/apple_sd_gothic_neo_m"
-                android:text="Six fold Screen of Ink Grapevine\nby Yi Eumjeong"
-                android:textAlignment="center"
-                android:textColor="@color/btn_gray"
-                android:textSize="8dp" />
 
             <TextView
                 android:id="@+id/project_item_intro_title"

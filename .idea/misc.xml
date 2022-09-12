@@ -3,9 +3,48 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/drawable/canada_select.xml" value="0.187" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/drawable/japan_select.xml" value="0.1785" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_culture_detail.xml" value="0.23052536231884058" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_culture_list.xml" value="0.13405797101449277" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_list_custom.xml" value="0.14322916666666666" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_story_detail.xml" value="0.264" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_story_detail2.xml" value="0.196875" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_story_detail3.xml" value="0.196875" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_story_list.xml" value="0.23958333333333334" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_fund_open.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_fund_open2.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_fund_participation.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_fund_participation2.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_fund_participation3.xml" value="0.24365942028985507" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home2.xml" value="0.25364583333333335" />
-        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_germany.xml" value="0.24365942028985507" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_germany_detail.xml" value="0.196875" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_japan.xml" value="0.20652173913043478" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_japan_detail.xml" value="0.196875" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_us.xml" value="0.20652173913043478" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_us_detail.xml" value="0.196875" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_main.xml" value="0.2536231884057971" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/contents_list_custom.xml" value="0.23958333333333334" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_contents.xml" value="0.2536231884057971" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_contents_culture.xml" value="0.24682971014492755" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_contents_story.xml" value="0.23958333333333334" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_fund.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_fund_end.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_fund_home.xml" value="0.2100456621004566" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_fund_new.xml" value="0.24365942028985507" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home_in_kr.xml" value="0.2056159420289855" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home_in_kr_japan.xml" value="0.2" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home_out_kr.xml" value="0.2056159420289855" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home_out_kr_japan.xml" value="0.536" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_my_fund_open.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fund_list_custom.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fund_part_list_custom.xml" value="0.2441123188405797" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/list_button_img.xml" value="0.2" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/list_type.xml" value="0.264" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/mypage_list_custom.xml" value="0.2441123188405797" />
+        <entry key="..\:/Users/hongy/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.13958333333333334" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1885" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2295" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/canada_select.xml" value="0.22" />

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeInKrGermanyFragment">
+
+    <!--메인_독일_돌아온 문화재-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingBottom="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/in_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="독일에서 한국으로 돌아왔어요"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/in_item_image1"
+                        android:layout_width="167dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/mask"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_kr1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="귀면문마루끝기와"
+                        android:textSize="17dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_eng1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Roof tile with Monster-mask design"
+                        android:textSize="8dp"
+                        android:textColor="@color/white_44"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/in_item_image2"
+                        android:layout_width="167dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/burial_urn"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_kr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="녹유골호"
+                        android:textSize="17dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_eng2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Green-glazed Burial Urn"
+                        android:textSize="8dp"
+                        android:textColor="@color/white_44"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/in_item_image3"
+                    android:layout_width="370dp"
+                    android:layout_height="167dp"
+                    android:src="@drawable/gukhwado"/>
+
+                <TextView
+                    android:id="@+id/in_item_title_kr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="정조 필 국화도"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/in_item_title_eng3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Gukhwado (Chrysanthemum) by King Jeongjo"
+                    android:textSize="8dp"
+                    android:textColor="@color/white_44"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/in_item_image4"
+                        android:layout_width="167dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/yi_seon_je"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_kr4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="이선제 묘지"
+                        android:textSize="17dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_eng4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="The Memorial Tablet of Yi Seon-je"
+                        android:textSize="8dp"
+                        android:textColor="@color/white_44"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/in_item_image5"
+                        android:layout_width="167dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/lotus_design"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_kr6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="쌍조문암막새"
+                        android:textSize="17dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/in_item_title_eng7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Roof-end tile with Lotus design"
+                        android:textSize="8dp"
+                        android:textColor="@color/white_44"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

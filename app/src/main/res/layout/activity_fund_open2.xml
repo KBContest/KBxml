@@ -188,23 +188,6 @@
             android:textColor="@color/white"
             android:textSize="11dp" />
 
-        <EditText
-            android:id="@+id/donation_day_edit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/donation_circle"
-            android:layout_below="@+id/donation_day"
-            android:background="@drawable/edit_box_custom"
-            android:hint="국외소재문화재재단"
-            android:inputType="date"
-            android:paddingLeft="15dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white_44"
-            android:textSize="12dp" />
-
         <android.widget.Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

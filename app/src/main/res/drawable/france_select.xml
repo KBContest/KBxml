@@ -2,17 +2,17 @@
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:drawable="@drawable/france_1"
-        android:duration="40"/>
+        android:duration="30"/>
     <item
         android:drawable="@drawable/france_2"
-        android:duration="40"/>
+        android:duration="30"/>
     <item
         android:drawable="@drawable/france_3"
-        android:duration="40"/>
+        android:duration="30"/>
     <item
         android:drawable="@drawable/france_4"
-        android:duration="40"/>
+        android:duration="30"/>
     <item
         android:drawable="@drawable/france_5"
-        android:duration="40"/>
+        android:duration="30"/>
 </animation-list>
