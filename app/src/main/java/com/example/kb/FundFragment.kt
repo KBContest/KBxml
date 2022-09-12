@@ -1,31 +1,33 @@
 /*모금 개설_1*/
 package com.example.kb
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Parcel
-import android.os.Parcelable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Adapter
-import android.widget.AdapterView
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ListView
-import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.database.*
 
 class FundFragment() : Fragment() {
     private lateinit var dbRef: DatabaseReference
     private lateinit var adapter: Adapter
     private lateinit var listView: ListView
+    var fundIdList = arrayListOf<Int>()
+    private var fundId = 0
+    private lateinit var fundraiserBtn: ImageButton
 
     constructor(parcel: Parcel) : this() {
     }
 
-    override fun onCreate(savedInstanceState: Bundle?){
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -48,57 +50,48 @@ class FundFragment() : Fragment() {
                         val modelResult = data.getValue(CulturalHeritage::class.java)
 
                         (adapter as CulturalHeritageAdapter).addItem(
-                            data.key!!.toInt(),
+                            modelResult!!.fundId,
                             modelResult!!.country,
                             modelResult!!.title,
-                            modelResult!!.targetMoney,
-                            modelResult!!.currentMoney)
+                            modelResult!!.targetAmount,
+                            modelResult!!.currentAmount)
+
+                        fundIdList.add(modelResult!!.fundId)
+
+                        // data.key!!.toInt()
                     }
                 }
+
                 (adapter as CulturalHeritageAdapter).notifyDataSetChanged()
             }
+
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
             }
         })
-        listView.setOnItemClickListener{ adapterView: AdapterView<*>, view1: View, i: Int, l: Long ->
-            // 눌린 위치에 해당하는 목록이 어떤 목록인지 가져오기
-            val clickedList = CulturalHeritageAdapter.culturalHeritageList2
+
+        // 모금 리스트 클릭
+        listView.isClickable = true
+        listView.setOnItemClickListener { adapterView, view, i, l ->
+            activity?.let {
+                val intent = Intent(context, FundParticipationActivity::class.java)
+                intent.putExtra("fundId", fundIdList[i])
+                startActivity(intent)
+            }
         }
 
+        // 모금 생성 버튼 클릭
+        fundraiserBtn = view.findViewById<ImageButton>(R.id.fundraiser_btn)
+        fundraiserBtn.setOnClickListener {
+            if (!fundIdList.isEmpty())
+                fundId = fundIdList.last()
+            activity?.let {
+                val intent = Intent(context, FundOpenActivity::class.java)
+                intent.putExtra("fundId", fundId)
+                startActivity(intent)
+            }
+        }
 
         return view
     }
-
-    // 리스트뷰의 일정 항목을 눌렀을 떄 다음 액티비티로 이동하는 코드
-    fun setupEvents(){
-
-    }
-
-    /*
-    private fun getData() {
-        dbRef = FirebaseDatabase.getInstance().getReference("CulturalHeritage")
-
-        dbRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()) {
-                    for (data in snapshot.children) {
-                        val modelResult = data.getValue(CulturalHeritage::class.java)
-
-                        adapter.addItem(
-                            data.key!!.toInt(),
-                            modelResult!!.country,
-                            modelResult!!.title,
-                            modelResult!!.targetMoney,
-                            modelResult!!.currentMoney)
-                    }
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
-        })
-    }
-     */
 }

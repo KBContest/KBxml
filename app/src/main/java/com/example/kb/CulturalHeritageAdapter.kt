@@ -29,14 +29,14 @@ class CulturalHeritageAdapter (private val context: Context) : BaseAdapter() {
         return 0
     }
 
-    fun addItem(id: Int, country: String, title: String, targetMoney: Int, currentMoney: Int) {
+    fun addItem(fundId: Int, country: String, title: String, targetAmount: Int, currentAmount: Int) {
         var item = CulturalHeritage();
 
-        item.id = id
+        item.fundId = fundId
         item.country = country
         item.title = title
-        item.targetMoney = targetMoney
-        item.currentMoney = currentMoney
+        item.targetAmount = targetAmount
+        item.currentAmount = currentAmount
 
         culturalHeritageList.add(item)
     }
@@ -51,7 +51,7 @@ class CulturalHeritageAdapter (private val context: Context) : BaseAdapter() {
         val title = view.findViewById<TextView>(R.id.fund_title)
         val percent = view.findViewById<TextView>(R.id.fund_progress_percent)
         val progressBar = view.findViewById<ProgressBar>(R.id.fund_progressBar)
-        val targetMoney = view.findViewById<TextView>(R.id.fund_money)
+        val targetAmount = view.findViewById<TextView>(R.id.fund_money)
 
         var percentInt: Int
 
@@ -59,7 +59,7 @@ class CulturalHeritageAdapter (private val context: Context) : BaseAdapter() {
         val culturalHeritage = culturalHeritageList[position]
 
         // ImageView
-        val id = culturalHeritage.id
+        val id = culturalHeritage.fundId
         val storageRef = FirebaseStorage.getInstance().reference.child("test/$id.jpg")
         val localFile = File.createTempFile("tempImage", "jpg")
         storageRef.getFile(localFile).addOnSuccessListener {
@@ -67,12 +67,12 @@ class CulturalHeritageAdapter (private val context: Context) : BaseAdapter() {
             imageView.setImageBitmap(bitmap)
         }
 
-        country.text = culturalHeritage.country
+        country.text = culturalHeritage.country + " 문화재"
         title.text = culturalHeritage.title
-        percentInt = (culturalHeritage.currentMoney.toDouble() / culturalHeritage.targetMoney * 100).toInt()
+        percentInt = (culturalHeritage.currentAmount.toDouble() / culturalHeritage.targetAmount * 100).toInt()
         percent.text = "$percentInt%"
         progressBar.setProgress(percentInt)
-        targetMoney.text = culturalHeritage.targetMoney.toString()
+        targetAmount.text = culturalHeritage.targetAmount.toString()
 
         return view
     }

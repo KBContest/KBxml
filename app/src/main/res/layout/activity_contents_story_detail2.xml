@@ -75,39 +75,30 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
+
+            <WebView
+                android:id="@+id/contents_story_webView"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/webviewcontainer"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_below="@+id/re_group">
-
-                <WebView
-                    android:id="@+id/contents_story_webView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="-3dp"
-                    android:layout_marginEnd="0dp"
-                    android:scrollbars="none"
-                    tools:ignore="WebViewLayout" />
-
-            </RelativeLayout>
-
-
-
+                android:layout_below="@+id/re_group"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="25dp"
+                android:scrollbars="none"
+                tools:ignore="WebViewLayout" />
 
             <RelativeLayout
                 android:id="@+id/re_group2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/webviewcontainer"
+                android:layout_below="@id/contents_story_webView"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:padding="25dp">
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="25dp">
 
                 <View
                     android:id="@+id/back_box"
