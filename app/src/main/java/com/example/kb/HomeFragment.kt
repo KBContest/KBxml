@@ -46,25 +46,7 @@ class HomeFragment : Fragment() {
             german = true
         }
 
-        main_btn.setOnClickListener{
-            val intent_jp = Intent(context, HomeJapanActivity::class.java)
-            val intent_us = Intent(context, HomeUsActivity::class.java)
-            // val intent_gm = Intent(context, HomeActivity4::class.java)
-
-            // 일본 텍스트 뷰 클릭 시 일본 환수 문화재 상세페이지로 이동
-            if(japan == true){
-                startActivity(intent_jp)
-            }
-            // 미국 텍스트 뷰 클릭 시 일본 환수 문화재 상세페이지로 이동
-            else if(america == true){
-                startActivity(intent_us)
-            }
-            // 독일 텍스트 뷰 클릭 시 일본 환수 문화재 상세페이지로 이동
-            else if(german == true){
-                //startActivity(intent_gm)
-            }
-        }
-
+        // 국가별 원모형 버튼을 눌렀을 때 다음 화면으로 이동할 버튼 등장 및 애니메이션 작동
         bind.japanCircle.setOnClickListener {
             main_btn.visibility = View.VISIBLE
             japan = true

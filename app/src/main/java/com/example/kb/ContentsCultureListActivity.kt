@@ -42,7 +42,7 @@ class ContentsCultureListActivity : AppCompatActivity() {
     }
 
     fun setValues() {
-        // 각각의 리스트 한 줄이  내용
+        // 각각의 리스트 한 줄 추가
         mContentsCultureList.add(ContentsCultureListModels("망국의 옹주, 덕혜옹주의 스란치마",""))
         mContentsCultureList.add(ContentsCultureListModels("다섯개의 산봉우리, 일월오봉도",""))
         mContentsCultureList.add(ContentsCultureListModels("어보를 품은 상자, 보록",""))
@@ -52,6 +52,7 @@ class ContentsCultureListActivity : AppCompatActivity() {
         mContentsCultureList.add(ContentsCultureListModels("고종의 국새, 국새 황제지보",""))
         mContentsCultureList.add(ContentsCultureListModels("조선시대 왕들의 글씨를 탁본한, 열성어필",""))
 
+        // 어댑터 연결
         mContentsCultureListAdapter = ContentsCultureListAdapter(this, mContentsCultureList)
         contents_culture_list.adapter = mContentsCultureListAdapter
 

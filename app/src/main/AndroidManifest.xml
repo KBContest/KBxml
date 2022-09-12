@@ -20,16 +20,10 @@
             android:name=".ContentsListCustomActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeGermanyDetailActivity"
+            android:name=".ContentsStoryDetailActivity3"
             android:exported="false" />
         <activity
-            android:name=".HomeGermanyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeUsDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeUsActivity"
+            android:name=".ContentsStoryDetailActivity2"
             android:exported="false" />
         <activity
             android:name=".ContentsCultureDetailActivity"
@@ -39,6 +33,12 @@
             android:exported="false"/>
         <activity
             android:name=".HomeJapanDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeJapanDetailActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".HomeJapanDetailActivity3"
             android:exported="false" />
         <activity
             android:name=".HomeJapanActivity"
