@@ -1,4 +1,4 @@
-/*콘텐츠_4 환수 스토리 상세보기*/
+/*메인화면_3_일본 상세보기*/
 package com.example.kb
 
 import android.graphics.Color
@@ -7,10 +7,10 @@ import android.os.Bundle
 import android.webkit.WebViewClient
 import kotlinx.android.synthetic.main.activity_contents_story_detail.*
 
-class ContentsStoryDetailActivity2 : AppCompatActivity() {
+class HomeJapanDetailActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_contents_story_detail2)
+        setContentView(R.layout.activity_home_japan_detail3)
 
         contents_story_webView.setBackgroundColor(Color.TRANSPARENT)
 
@@ -19,6 +19,6 @@ class ContentsStoryDetailActivity2 : AppCompatActivity() {
             settings.javaScriptEnabled = true
         }
         // 웹뷰에 사용될 주소
-        contents_story_webView.loadUrl("file:///android_asset/콘텐츠_독서당 계회도.html")
+        contents_story_webView.loadUrl("file:///android_asset/메인_녹유골호.html")
     }
 }
