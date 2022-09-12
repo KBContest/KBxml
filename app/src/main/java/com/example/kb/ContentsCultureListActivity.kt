@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_contents_story_list.*
 
 class ContentsCultureListActivity : AppCompatActivity() {
 
-    // push test
+    // push test.
     val mContentsCultureList = ArrayList<ContentsCultureListModels>()
     lateinit var mContentsCultureListAdapter: ContentsCultureListAdapter
 

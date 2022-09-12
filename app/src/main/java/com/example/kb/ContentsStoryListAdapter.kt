@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class ContentsStoryListAdapter(val context: Context, val list:ArrayList<ContentsStoryListModels>):BaseAdapter() {
-    // push test
+    // push test.
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view : View
         val holder : ViewHolder

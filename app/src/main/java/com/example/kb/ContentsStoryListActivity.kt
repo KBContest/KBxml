@@ -13,7 +13,7 @@ import com.example.kb.ContentsListBtnAdapter.ListBtnClickListener
 class ContentsStoryListActivity : AppCompatActivity() {
 
     //수정완료
-    // push test
+    // push test.
     val mContentsStoryList = ArrayList<ContentsStoryListModels>()
     lateinit var mContentsStoryListAdapter: ContentsStoryListAdapter
 

@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class ContentsCultureListAdapter (val context: Context, val list:ArrayList<ContentsCultureListModels>): BaseAdapter() {
-    // push test
+    // push test.
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view : View
         val holder : ViewHolder
