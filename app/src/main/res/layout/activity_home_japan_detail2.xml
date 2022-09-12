@@ -122,7 +122,7 @@
                     android:layout_marginTop="25dp"
                     android:fontFamily="@font/apple_sd_gothic_neo_m"
                     android:lineHeight="20dp"
-                    android:text="현재 일본이 소장 중인 몽유도원도.\n그 반출과정에 얽힌 이야기는 어떠신가요?"
+                    android:text="이제는 고국으로 돌아온 귀면문마루끝기와.\n그 환수 과정에 얽힌 이야기는 어떠신가요?"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="14dp" />
