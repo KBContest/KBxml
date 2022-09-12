@@ -2,6 +2,7 @@
 package com.example.kb
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,5 +23,14 @@ class ContentsStoryDetailActivity : AppCompatActivity() {
         }
         // 웹뷰에 사용될 주소
         contents_story_webView.loadUrl("file:///android_asset/콘텐츠_덕혜옹주.html")
+
+        // 하단의 다른 버튼1을 눌렀을 때 화면 이동
+        other_contents_btn1.setOnClickListener {
+            startActivity(Intent(this@ContentsStoryDetailActivity, ContentsStoryDetailActivity3::class.java))
+        }
+        // 하단의 다른 버튼2을 눌렀을 때 화면 이동
+        other_contents_btn2.setOnClickListener {
+            startActivity(Intent(this@ContentsStoryDetailActivity, ContentsStoryDetailActivity2::class.java))
+        }
     }
 }

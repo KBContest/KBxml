@@ -36,6 +36,20 @@ class HomeFragment : Fragment() {
         bind.japanCircle.setOnClickListener {
             main_btn.visibility = View.VISIBLE
             japan = true
+        }
+        bind.usCircle.setOnClickListener {
+            main_btn.visibility = View.VISIBLE
+            america = true
+        }
+        bind.germanyCircle.setOnClickListener {
+            main_btn.visibility = View.VISIBLE
+            german = true
+        }
+
+        // 국가별 원모형 버튼을 눌렀을 때 다음 화면으로 이동할 버튼 등장 및 애니메이션 작동
+        bind.japanCircle.setOnClickListener {
+            main_btn.visibility = View.VISIBLE
+            japan = true
             america = false
             german = false
             it.isSelected = true
@@ -119,6 +133,7 @@ class HomeFragment : Fragment() {
                 startActivity(intent_gm)
             }*/
         }
+
         return bind.root
     }
 }

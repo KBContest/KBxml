@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.kb">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,27 +14,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KB"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".HomeGermanyDetailActivity"
+            android:name=".ContentsListCustomActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeGermanyActivity"
+            android:name=".ContentsStoryDetailActivity3"
             android:exported="false" />
         <activity
-            android:name=".HomeUsDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeUsActivity"
+            android:name=".ContentsStoryDetailActivity2"
             android:exported="false" />
         <activity
             android:name=".ContentsCultureDetailActivity"
             android:exported="false" />
         <activity
             android:name=".ContentsCultureListActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".HomeJapanDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeJapanDetailActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".HomeJapanDetailActivity3"
             android:exported="false" />
         <activity
             android:name=".HomeJapanActivity"

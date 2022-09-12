@@ -85,11 +85,18 @@
 
             </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/webviewcontainer"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/re_group">
+
             <WebView
                 android:id="@+id/contents_story_webView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/re_group"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="25dp"
@@ -98,11 +105,15 @@
                 android:scrollbars="none"
                 tools:ignore="WebViewLayout" />
 
+        </RelativeLayout>
+
+
+
             <RelativeLayout
                 android:id="@+id/re_group2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/contents_story_webView"
+                android:layout_below="@id/webviewcontainer"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:paddingRight="25dp"

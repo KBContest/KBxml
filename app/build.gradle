@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android-extensions'
     id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -31,6 +32,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+
+    viewBinding{
+        enabled = true
+    }
+
+
     buildFeatures {
         viewBinding = true
     }

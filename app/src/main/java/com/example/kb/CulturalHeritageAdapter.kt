@@ -14,9 +14,11 @@ import java.io.File
 
 class CulturalHeritageAdapter (private val context: Context) : BaseAdapter() {
     var culturalHeritageList = arrayListOf<CulturalHeritage>()
+    var culturalHeritageList2 = ArrayList<CulturalHeritage>()
 
     override fun getCount(): Int {
         return culturalHeritageList.size
+
     }
 
     override fun getItem(position: Int): Any {

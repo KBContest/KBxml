@@ -8,7 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class ContentsStoryListAdapter(val context: Context, val list:ArrayList<ContentsStoryListModels>):BaseAdapter() {
+class ContentsCultureListAdapter (val context: Context, val list:ArrayList<ContentsCultureListModels>): BaseAdapter() {
     // push test.
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view : View
@@ -56,4 +56,5 @@ class ContentsStoryListAdapter(val context: Context, val list:ArrayList<Contents
         var image: ImageView?= null
 
     }
+
 }
