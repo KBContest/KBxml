@@ -55,7 +55,7 @@ class FundOpenActivity2 : AppCompatActivity() {
         }
         if (intent.hasExtra("imageUri")) {
             // imageUri = intent.getStringExtra("introShortEdit").toString().toUri()
-            imageUri = Uri.parse("file://" + intent.getStringExtra("introShortEdit").toString())
+            imageUri = Uri.parse(intent.getStringExtra("imageUri").toString())
         }
         if (intent.hasExtra("projectName")) {
             projectName = intent.getStringExtra("projectName").toString()
