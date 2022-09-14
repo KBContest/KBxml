@@ -115,6 +115,8 @@ class FundOpenActivity : AppCompatActivity() {
                 projectName = project_intro_name_edit.text.toString()
 
                 val intent = Intent(this, FundOpenActivity2::class.java)
+                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
                 intent.putExtra("fundId", fundId)
                 intent.putExtra("title", title)
                 intent.putExtra("country", country)
@@ -145,6 +147,7 @@ class FundOpenActivity : AppCompatActivity() {
         if (requestCode == 100 && resultCode == RESULT_OK) {
             imageUri = data?.data!!
             item_picture.setImageURI(imageUri)
+            println("1 : $imageUri")
         }
     }
 }

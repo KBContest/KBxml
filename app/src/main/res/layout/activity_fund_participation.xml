@@ -420,7 +420,7 @@
                 android:textSize="16dp" />
 
             <TextView
-                android:id="@+id/project_item_intro1"
+                android:id="@+id/project_item_intro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/project_item_intro_title"
@@ -429,42 +429,7 @@
                 android:layout_marginRight="25dp"
                 android:fontFamily="@font/apple_sd_gothic_neo_l"
                 android:lineSpacingExtra="3dp"
-                android:text="이 프로젝트는 전세계에서 70여점 밖에 존재하지 않은 희귀한 금동반가
-사유상이고 조형미가 매우 뛰어남을 인정 받았지만 현재는 일본으로 반출된 '공주 출토 금동반가사유상'문화재 환수
-지원을 목적으로 개설된 프로젝트입니다."
-                android:textColor="@color/white"
-                android:textSize="14dp" />
-
-            <TextView
-                android:id="@+id/project_item_intro2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/project_item_intro1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="25dp"
-                android:fontFamily="@font/apple_sd_gothic_neo_l"
-                android:lineSpacingExtra="3dp"
-                android:text="'공주 출도 금동반가사유상'은 높이가 16.3m의 작은 크기의 불상입니다.
-일반적으로 크기가 작은 반가사유상은 표현이 세밀하지 않은 경우가 많지만 '공주 출토 금동반가사유상'은 균형감이
-매우 뛰어나며 치밀하고 사실적인 묘사가 장점입니다."
-
-                android:textColor="@color/white"
-                android:textSize="14dp" />
-
-            <TextView
-                android:id="@+id/project_item_intro3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/project_item_intro2"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="130dp"
-                android:fontFamily="@font/apple_sd_gothic_neo_l"
-                android:lineSpacingExtra="3dp"
-                android:text="그러나 사유 재산이라서 돌려줄 수 없다는 이유로 오구라 컬렉션의 일부인
-'공주 출토 금동반가사유상'은 아직 일본 정부의 국유 재산인 상황입니다. ..."
+                android:text="이 프로젝트는 전세계에서 70여점 밖에 존재하지 않은 희귀한 금동반가 사유상이고 조형미가 매우 뛰어남을 인정 받았지만 현재는 일본으로 반출된 '공주 출토 금동반가사유상'문화재 환수 지원을 목적으로 개설된 프로젝트입니다.\n'공주 출도 금동반가사유상'은 높이가 16.3m의 작은 크기의 불상입니다. 일반적으로 크기가 작은 반가사유상은 표현이 세밀하지 않은 경우가 많지만 '공주 출토 금동반가사유상'은 균형감이 매우 뛰어나며 치밀하고 사실적인 묘사가 장점입니다.\n그러나 사유 재산이라서 돌려줄 수 없다는 이유로 오구라 컬렉션의 일부인 '공주 출토 금동반가사유상'은 아직 일본 정부의 국유 재산인 상황입니다. ..."
                 android:textColor="@color/white"
                 android:textSize="14dp" />
 
