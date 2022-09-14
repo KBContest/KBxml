@@ -44,10 +44,23 @@
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_story_detail2.xml" value="0.25364583333333335" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_contents_story_list.xml" value="0.22282608695652173" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_japan_detail.xml" value="0.2105978260869565" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_home_japan_detail2.xml" value="0.25364583333333335" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_main.xml" value="0.19114583333333332" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_qa2.xml" value="0.2246376811594203" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_qa3.xml" value="0.264" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_qa4.xml" value="0.17864583333333334" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_sign_up1.xml" value="0.17864583333333334" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_sign_up2.xml" value="0.17864583333333334" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_sign_up3.xml" value="0.1" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_sign_up4.xml" value="0.1" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/activity_sign_up5.xml" value="0.25" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/contents_list_custom.xml" value="0.18342391304347827" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home_in_kr_japan.xml" value="0.264" />
         <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_home_out_kr_japan.xml" value="0.25364583333333335" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_mypage.xml" value="0.12335359675785208" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_qa.xml" value="0.1" />
+        <entry key="..\:/KBSC/KBxml/app/src/main/res/layout/fragment_qa3.xml" value="0.10677083333333333" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1885" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2295" />
         <entry key="..\:/Users/yur51/AndroidStudioProjects/KB/app/src/main/res/drawable/circle_btn.xml" value="0.2565" />

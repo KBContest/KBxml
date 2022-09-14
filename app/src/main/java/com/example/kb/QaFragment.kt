@@ -1,28 +1,28 @@
 /*질의응답_1*/
 package com.example.kb
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import androidx.fragment.app.Fragment
+import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.fragment_qa.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [QaFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class QaFragment : Fragment() {
-
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,32 +40,37 @@ class QaFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_qa, container, false)
         val qnaBtn = view.findViewById<Button>(R.id.qna_btn)
+        val qnaEditText = view.findViewById<EditText>(R.id.qna_editText1)
 
-        println("-- setOnClickListener 밖 --")
+        val database = FirebaseDatabase.getInstance()
+        // val myRef = database.getReference("question")
+        val myRef = database.getReference("/information/question")
+
         qnaBtn.setOnClickListener {
-            println("-- setOnClickListener 안 --")
+            myRef.setValue(qna_editText1.text.toString())
+            val intent = Intent(activity, QaActivity2::class.java)
+            //          intent.putExtra("question", qna_editText.text.toString())
+            startActivity(intent)
+
         }
+        qnaEditText.addTextChangedListener(object: TextWatcher {
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                qna_text_count.text = "0 / 150"
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                var userinput =  qna_editText1.text.toString()
+                qna_text_count.text = userinput.length.toString() + " / 150"
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                var userinput = qna_editText1.text.toString()
+                qna_text_count.text = userinput.length.toString() + " / 150"
+            }
+
+        })
 
         return view
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment QAFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            QaFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
     }
 }

@@ -15,10 +15,10 @@
         android:weightSum="6">
 
         <ImageButton
-            android:id="@+id/contents_back_btn"
+            android:id="@+id/contents_back_btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="25dp"
+            android:paddingLeft="35dp"
             android:layout_marginTop="20dp"
             android:layout_weight="0.7"
             android:background="@android:color/transparent"
@@ -28,41 +28,52 @@
             android:id="@+id/email_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
             android:layout_weight="0.4"
-            android:text="비밀번호를 입력해주세요"
+            android:text="비밀번호를 다시 입력해주세요"
             android:textColor="@color/white"
             android:textSize="16dp" />
 
         <!-- 글자수 설정 필요-->
-        <EditText
-            android:id="@+id/editTextTextPassword_confirm"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_pw"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
             android:backgroundTint="#66ffffff"
-            android:drawableRight="@drawable/confirm_password"
-            android:ems="10"
-            android:hint="비밀번호 확인"
-            android:inputType="numberPassword"
-            android:paddingBottom="15dp"
-            android:textColor="@color/white"
             android:textColorHint="@color/white_44"
-            android:textSize="12dp" />
+            app:boxBackgroundColor="@android:color/transparent"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPassword_confirm"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:hint="비밀번호 확인"
+                android:backgroundTint="#66ffffff"
+                android:drawableRight="@drawable/confirm_password"
+                android:inputType="textPassword"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="20" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextTextPassword2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="35dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="25dp"
+            android:layout_marginRight="35dp"
             android:backgroundTint="#66ffffff"
             android:ems="10"
             android:hint="비밀번호"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:paddingBottom="15dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white_44"
@@ -72,9 +83,9 @@
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="35dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="25dp"
+            android:layout_marginRight="35dp"
             android:backgroundTint="#66ffffff"
             android:ems="10"
             android:hint="이메일"
@@ -86,7 +97,7 @@
     </LinearLayout>
 
     <android.widget.Button
-        android:id="@+id/next_btn"
+        android:id="@+id/next_btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

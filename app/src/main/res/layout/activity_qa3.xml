@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QaActivity3">
+
+    <!--질의응답_2-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/qna_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="45dp"
+                    android:src="@drawable/btn_back" />
+
+                <TextView
+                    android:id="@+id/q_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="144dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="190dp"
+                    android:layout_toEndOf="@+id/qna_back_btn"
+                    android:text="질문"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp">
+
+                <View
+                    android:id="@+id/qna_background_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/qa_contents_background" />
+
+                <ImageView
+                    android:id="@+id/qna_profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/project_builder_profile" />
+
+                <TextView
+                    android:id="@+id/qna_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/qna_profile_image"
+                    android:text="맑은구름"
+                    android:textColor="@color/white_44"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/qna_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qna_name"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/qna_profile_image"
+                    android:text="2022.08.03"
+                    android:textColor="@color/white_44"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/qna_q"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qna_profile_image"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Q. 일본으로 반출된 문화재에는 무엇이 있나요?"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <View
+                    android:id="@+id/qna_divide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/qna_q"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="42dp"
+                    android:background="@color/white_44" />
+
+                <Button
+                    android:id="@+id/qna_q_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/qna_divide_line"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/apple_sd_gothic_neo_b"
+                    android:text="궁금해요 1"
+                    android:textColor="@color/white_44"
+                    android:textSize="13dp" />
+
+                <View
+                    android:id="@+id/qna_divide_line2"
+                    android:layout_width="1dp"
+                    android:layout_height="41dp"
+                    android:layout_below="@+id/qna_divide_line"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_toStartOf="@+id/qna_a_btn"
+                    android:layout_toEndOf="@+id/qna_q_btn"
+                    android:background="@color/white_44" />
+
+                <Button
+                    android:id="@+id/qna_a_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/qna_divide_line"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="45dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/apple_sd_gothic_neo_b"
+                    android:text="답변 2"
+                    android:textColor="@color/white_44"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/qna_divide_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white_44" />
+            <!--질의응답_2 답변 리스트 커스텀-->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp">
+
+                <View
+                    android:id="@+id/qna_background_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/qa_contents_background" />
+
+                <ImageView
+                    android:id="@+id/qna_a_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/user_profile_1" />
+
+                <TextView
+                    android:id="@+id/qna_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toEndOf="@+id/qna_a_profile"
+                    android:text="미야"
+                    android:textColor="@color/white_44"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/qna_day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/qna_name1"
+                    android:text="2022.08.03"
+                    android:textColor="@color/white_44"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/qna_q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qna_a_profile"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:maxLines="2"
+                    android:text="A. 일본으로 반출된 문화재로는 현재 OO, AA가 있습니다.
+이 중 AA는 올해 반환되었구요. 일본으로 반출된 문화재로는 현재 OO, AA가 있습니다.
+이 중 AA는 올해 반환되었구요."
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/qna_a_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qna_q1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:text="더보기"
+                    android:textColor="@color/white_44"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+            <!--질의응답_2 답변 리스트 커스텀-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp">
+
+                <View
+                    android:id="@+id/qna_background_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/qa_contents_background" />
+
+                <ImageView
+                    android:id="@+id/qna_a_profile2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/user_profile_2" />
+
+                <TextView
+                    android:id="@+id/qna_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toEndOf="@+id/qna_a_profile2"
+                    android:text="쿠크다스"
+                    android:textColor="@color/white_44"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/qna_day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/qna_name2"
+                    android:text="2022.08.03"
+                    android:textColor="@color/white_44"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/qna_q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qna_a_profile2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginRight="20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:maxLines="2"
+                    android:text="A. 일본으로 반출된 문화재로는 AA가 있습니다.
+그리고 추가로 CC 등 현재까지 반출은 진행됐습니다. 하지만 아직 아직"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/qna_a_more2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qna_q2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/apple_sd_gothic_neo_m"
+                    android:text="더보기"
+                    android:textColor="@color/white_44"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/qna_a_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/qna_divide_line4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/qna_a_edit_background"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white_44" />
+
+    <View
+        android:id="@+id/qna_a_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="16dp"
+        android:weightSum="5">
+
+        <!--글자수, eidtType 설정 필요-->
+
+        <EditText
+            android:id="@+id/qna_a_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/qna_edit_box_custom"
+            android:hint="답변을 남겨주세요."
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_44"
+            android:textSize="13dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/qna_a_edit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:background="@drawable/radius_beige"
+            android:text="등록"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -4,6 +4,7 @@
     package="com.example.kb">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +17,19 @@
         android:theme="@style/Theme.KB"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".QuestionDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QaActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".QaActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".QaActivity2"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ContentsListCustomActivity"
             android:exported="false" />
@@ -30,7 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".ContentsCultureListActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".HomeJapanDetailActivity"
             android:exported="false" />
@@ -43,10 +57,6 @@
         <activity
             android:name=".HomeJapanActivity"
             android:exported="false" />
-        <activity
-            android:name=".QaActivity2"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".FundParticipationActivity3"
             android:exported="false" />
@@ -82,13 +92,13 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".SignUpActivity1"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ContentsStoryListActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUpActivity1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
