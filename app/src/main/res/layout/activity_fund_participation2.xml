@@ -85,7 +85,6 @@
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/fund_edit_custom"
-            android:hint="최소 10,000"
             android:paddingBottom="5dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white_44"

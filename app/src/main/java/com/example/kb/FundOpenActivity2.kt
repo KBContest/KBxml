@@ -27,7 +27,7 @@ class FundOpenActivity2 : AppCompatActivity() {
     private lateinit var projectName: String
     private var targetAmount = 0
     private var currentAmount = 0
-    private var formatDate = SimpleDateFormat("dd MM YYYY", Locale.US)
+    private var formatDate = SimpleDateFormat("yyyyMMdd", Locale.US)
     private lateinit var startDay: String
     private lateinit var endDay: String
     private lateinit var dbRef: DatabaseReference
@@ -55,7 +55,7 @@ class FundOpenActivity2 : AppCompatActivity() {
         }
         if (intent.hasExtra("imageUri")) {
             // imageUri = intent.getStringExtra("introShortEdit").toString().toUri()
-            imageUri = Uri.parse(intent.getStringExtra("imageUri").toString())
+            imageUri = Uri.parse(intent.getStringExtra("imageUri"))
         }
         if (intent.hasExtra("projectName")) {
             projectName = intent.getStringExtra("projectName").toString()
@@ -91,7 +91,6 @@ class FundOpenActivity2 : AppCompatActivity() {
                 selectDate.set(Calendar.DAY_OF_MONTH, i3)
 
                 endDay = formatDate.format(selectDate.time)
-                println(endDay)
                 end_day_edit.setText(endDay)
             }, getDate.get(Calendar.YEAR), getDate.get(Calendar.MONTH), getDate.get(Calendar.DAY_OF_MONTH))
             datePicker.show()
@@ -124,6 +123,12 @@ class FundOpenActivity2 : AppCompatActivity() {
                 println(e)
                 Toast.makeText(this, "모든 정보를 입력해 주세요.", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        val fund_back_btn = findViewById<Button>(R.id.fund_back_btn)
+        fund_back_btn.setOnClickListener {
+            val intent = Intent(this, FundOpenActivity::class.java)
+            startActivity(intent)
         }
     }
 }

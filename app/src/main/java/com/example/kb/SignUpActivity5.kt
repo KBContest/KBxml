@@ -15,8 +15,11 @@ class SignUpActivity5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up5)
 
-        val database = FirebaseDatabase.getInstance()
-        val myRef = database.getReference("nickname")
+        val uid = intent.getStringExtra("uid").toString()
+        val email = intent.getStringExtra("email").toString()
+        val pw = intent.getStringExtra("pw").toString()
+        var hashMap = HashMap<String, Any>()
+        val dbRef = FirebaseDatabase.getInstance().getReference("member")
 
         contents_back_btn.setOnClickListener {
             val intent = Intent(this, SignUpActivity4::class.java)
@@ -24,9 +27,14 @@ class SignUpActivity5 : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.complete_btn).setOnClickListener {
-            myRef.setValue(editTextName.text.toString())
+            hashMap.put("uid", uid)
+            hashMap.put("email", email)
+            hashMap.put("pw", pw)
+
+            dbRef.child(uid).setValue(hashMap)
 
             val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("uid", uid)
             startActivity(intent)
         }
 

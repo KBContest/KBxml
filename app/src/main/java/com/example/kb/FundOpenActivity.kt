@@ -44,6 +44,7 @@ class FundOpenActivity : AppCompatActivity() {
         val item_picture = findViewById<ImageView>(R.id.item_picture)
         val project_intro_name_edit = findViewById<EditText>(R.id.project_intro_name_edit)
         val fund_next_btn = findViewById<Button>(R.id.fund_next_btn)
+        val fund_back_btn = findViewById<Button>(R.id.fund_back_btn)
 
         // 국가 선택
         country_j_btn.setOnClickListener {
@@ -122,7 +123,9 @@ class FundOpenActivity : AppCompatActivity() {
                 intent.putExtra("country", country)
                 intent.putExtra("introEdit", introEdit)
                 intent.putExtra("introShortEdit", introShortEdit)
-                intent.putExtra("imageUri", imageUri.toString())
+                if (!imageUri.toString().isNullOrEmpty()) {
+                    intent.putExtra("imageUri", imageUri.toString())
+                }
                 intent.putExtra("projectName", projectName)
                 startActivity(intent)
                 finish()
@@ -131,10 +134,16 @@ class FundOpenActivity : AppCompatActivity() {
                 Toast.makeText(this, "모든 정보를 입력해 주세요.", Toast.LENGTH_SHORT).show()
             }
         }
+
+        fund_back_btn.setOnClickListener {
+            val intent = Intent(this, FundFragment::class.java)
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            finish()
+        }
     }
 
     private fun selectImage() {
-        val intent = Intent()
+        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
         intent.type = "image/"
         intent.action = Intent.ACTION_GET_CONTENT
 
@@ -147,7 +156,6 @@ class FundOpenActivity : AppCompatActivity() {
         if (requestCode == 100 && resultCode == RESULT_OK) {
             imageUri = data?.data!!
             item_picture.setImageURI(imageUri)
-            println("1 : $imageUri")
         }
     }
 }

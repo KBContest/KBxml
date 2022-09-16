@@ -33,6 +33,7 @@ class SignUpActivity3 : AppCompatActivity() {
                 editTextTextPassword_confirm.error = "Password legnth is more than 6 digit"
             }
             else {
+                intent.putExtra("uid", auth!!.uid)
                 intent.putExtra("email", text)
                 intent.putExtra("pw", text2)
                 startActivity(intent)

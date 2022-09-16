@@ -54,7 +54,8 @@ class FundFragment() : Fragment() {
                             modelResult!!.country,
                             modelResult!!.title,
                             modelResult!!.targetAmount,
-                            modelResult!!.currentAmount)
+                            modelResult!!.currentAmount,
+                            modelResult!!.endDay)
 
                         fundIdList.add(modelResult!!.fundId)
 
