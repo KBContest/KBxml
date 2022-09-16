@@ -85,7 +85,7 @@ class FundFragment() : Fragment() {
         fundraiserBtn = view.findViewById<ImageButton>(R.id.fundraiser_btn)
         fundraiserBtn.setOnClickListener {
             if (!fundIdList.isEmpty())
-                fundId = fundIdList.last()
+                fundId = fundIdList.last() + 1
             activity?.let {
                 val intent = Intent(context, FundOpenActivity::class.java)
                 intent.putExtra("fundId", fundId)

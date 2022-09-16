@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.net.toUri
 import com.google.firebase.database.*
@@ -107,8 +108,8 @@ class FundOpenActivity2 : AppCompatActivity() {
                 val fund = CulturalHeritage(fundId, title, country, introEdit, introShortEdit, projectName, targetAmount, currentAmount, startDay, endDay)
                 dbRef.child(fundId.toString()).setValue(fund).addOnSuccessListener {
                     // Storage에 이미지 저장
-                    storageRef = FirebaseStorage.getInstance().reference
-                    storageRef.child("test/$fundId.jpg").putFile(imageUri)
+                    // storageRef = FirebaseStorage.getInstance().reference
+                    // storageRef.child("test/$fundId.jpg").putFile(imageUri)
                     // 모금 홈 화면으로 전환
                     val intent = Intent(this, FundFragment::class.java)
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
@@ -125,7 +126,7 @@ class FundOpenActivity2 : AppCompatActivity() {
             }
         }
 
-        val fund_back_btn = findViewById<Button>(R.id.fund_back_btn)
+        val fund_back_btn = findViewById<ImageButton>(R.id.fund_back_btn)
         fund_back_btn.setOnClickListener {
             val intent = Intent(this, FundOpenActivity::class.java)
             startActivity(intent)

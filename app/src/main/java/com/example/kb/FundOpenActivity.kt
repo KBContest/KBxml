@@ -6,10 +6,8 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
+import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_fund_open.*
 import java.lang.Exception
 
@@ -44,7 +42,7 @@ class FundOpenActivity : AppCompatActivity() {
         val item_picture = findViewById<ImageView>(R.id.item_picture)
         val project_intro_name_edit = findViewById<EditText>(R.id.project_intro_name_edit)
         val fund_next_btn = findViewById<Button>(R.id.fund_next_btn)
-        val fund_back_btn = findViewById<Button>(R.id.fund_back_btn)
+        val fund_back_btn = findViewById<ImageButton>(R.id.fund_back_btn)
 
         // 국가 선택
         country_j_btn.setOnClickListener {
@@ -102,7 +100,7 @@ class FundOpenActivity : AppCompatActivity() {
             country_g_btn.isSelected = false
         }
 
-        // 이미지 선택
+        // 이미지 선택 및 저장
         item_picture.setOnClickListener {
             selectImage()
         }
@@ -124,6 +122,9 @@ class FundOpenActivity : AppCompatActivity() {
                 intent.putExtra("introEdit", introEdit)
                 intent.putExtra("introShortEdit", introShortEdit)
                 if (!imageUri.toString().isNullOrEmpty()) {
+                    val storageRef = FirebaseStorage.getInstance().getReference("test/${this.fundId}")
+                    storageRef.putFile(imageUri)
+
                     intent.putExtra("imageUri", imageUri.toString())
                 }
                 intent.putExtra("projectName", projectName)
